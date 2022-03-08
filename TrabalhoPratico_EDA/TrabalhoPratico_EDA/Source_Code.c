@@ -59,68 +59,72 @@ void WriteCenterTextMenu() {
 		switch (IN_Iterator)
 		{
 		case 1:
-
 			STR_ConstStringToDraw = STR_Menu;
 			IN_StringLengh = strlen(STR_Menu);
 			IN_Fill_Width = (CI_GetXOfCMD - IN_StringLengh) / 2 + IN_StringLengh;
+			printf("%*s\n", IN_Fill_Width, STR_ConstStringToDraw);
 			IN_Iterator++;
 			break;
 
-
 		case 2:
-
 			STR_ConstStringToDraw = STR_Option1;
 			IN_StringLengh = strlen(STR_Option1);
 			IN_Fill_Width = (CI_GetXOfCMD - IN_StringLengh) / 2 + IN_StringLengh;
+			printf("%*s\n", IN_Fill_Width, STR_ConstStringToDraw);
 			IN_Iterator++;
 			break;
 
 		case 3:
-
 			STR_ConstStringToDraw = STR_Option2;
 			IN_StringLengh = strlen(STR_Option2);
 			IN_Fill_Width = (CI_GetXOfCMD - IN_StringLengh) / 2 + IN_StringLengh;
+			printf("%*s\n", IN_Fill_Width, STR_ConstStringToDraw);
 			IN_Iterator++;
 			break;
-		case 4:
 
+		case 4:
 			STR_ConstStringToDraw = STR_Option3;
 			IN_StringLengh = strlen(STR_Option3);
 			IN_Fill_Width = (CI_GetXOfCMD - IN_StringLengh) / 2 + IN_StringLengh;
+			printf("%*s\n", IN_Fill_Width, STR_ConstStringToDraw);
 			IN_Iterator++;
 			break;
-		case 5:
 
+		case 5:
 			STR_ConstStringToDraw = STR_Option4;
 			IN_StringLengh = strlen(STR_Option4);
 			IN_Fill_Width = (CI_GetXOfCMD - IN_StringLengh) / 2 + IN_StringLengh;
+			printf("%*s\n", IN_Fill_Width, STR_ConstStringToDraw);
 			IN_Iterator++;
 			break;
-		case 6:
 
+		case 6:
 			STR_ConstStringToDraw = STR_Option5;
 			IN_StringLengh = strlen(STR_Option5);
 			IN_Fill_Width = (CI_GetXOfCMD - IN_StringLengh) / 2 + IN_StringLengh;
+			printf("%*s\n", IN_Fill_Width, STR_ConstStringToDraw);
 			IN_Iterator++;
 			break;
-		case 7:
 
-			//strcpy(STR_ConstStringToDraw,STR_Option6);
+		case 7:
+			STR_ConstStringToDraw = STR_Option6;
 			IN_StringLengh = strlen(STR_Option6);
 			IN_Fill_Width = (CI_GetXOfCMD - IN_StringLengh) / 2 + IN_StringLengh;
+			printf("%*s\n", IN_Fill_Width, STR_ConstStringToDraw);
 			IN_Iterator++;
 			break;
 
 		default:
+			printf("SOMETHING GOES WRONG WITH THE ITERATOR");
+			Menu();
 			break;
 		}
 
-		printf("%*s\n", IN_Fill_Width, &STR_ConstStringToDraw);
+
 
 	} while (IN_Iterator < 8);
 
 }
-
 
 
 //Function to get the size in X of CMD 

@@ -1,10 +1,9 @@
 ﻿  Source_Code.c
 D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(63,36): warning C4090: '=': different 'const' qualifiers
-D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(72,39): warning C4090: '=': different 'const' qualifiers
-D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(80,39): warning C4090: '=': different 'const' qualifiers
-D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(87,39): warning C4090: '=': different 'const' qualifiers
-D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(94,39): warning C4090: '=': different 'const' qualifiers
-D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(101,39): warning C4090: '=': different 'const' qualifiers
-D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(118,10): warning C4477: 'printf' : format string '%*s' requires an argument of type 'char *', but variadic argument 2 has type 'char **'
-D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(118,10): message : this argument is used by a conversion specifier
-  TrabalhoPratico_EDA.vcxproj -> D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Debug\TrabalhoPratico_EDA.exe
+D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(73,39): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(82,39): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(90,39): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(98,39): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(106,39): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(114,39): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(127): error C4703: potentially uninitialized local pointer variable 'STR_ConstStringToDraw' used
