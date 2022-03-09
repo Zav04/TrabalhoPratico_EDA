@@ -24,8 +24,10 @@ int main() {
 //Function Menu to start draw the functions
 void Menu(){
 
+	int IN_OptionFromUser=-1;
 	WriteCenterTextMenu();
-	system("PAUSE");
+	VerifyOptionFromUser(GetOptionFromUser(IN_OptionFromUser));
+	
 
 
 
@@ -52,6 +54,9 @@ void WriteCenterTextMenu() {
 	const char* STR_Option4 = "4-Minimum  time to complete a job";
 	const char* STR_Option5 = "5-Maximum time to complete a job";
 	const char* STR_Option6 = "6-Average time to complete a job";
+	const char* STR_Option7 = "7-Exit";
+	const char* STR_Operation = "OPERATION: ";
+	const char* STR_ErrorHandle = "SOMETHING GOES WRONG WITH THE ITERATOR";
 
 
 	do
@@ -114,15 +119,36 @@ void WriteCenterTextMenu() {
 			IN_Iterator++;
 			break;
 
+		case 8:
+			STR_ConstStringToDraw = STR_Option7;
+			IN_StringLengh = strlen(STR_Option7);
+			IN_Fill_Width = (CI_GetXOfCMD - IN_StringLengh) / 2 + IN_StringLengh;
+			printf("%*s\n", IN_Fill_Width, STR_ConstStringToDraw);
+			IN_Iterator++;
+			break;
+
+		case 9:
+			STR_ConstStringToDraw = STR_Operation;
+			IN_StringLengh = strlen(STR_Operation);
+			IN_Fill_Width = (CI_GetXOfCMD - IN_StringLengh) / 2 + IN_StringLengh;
+			printf("%*s", IN_Fill_Width, STR_ConstStringToDraw);
+			IN_Iterator++;
+			break;
+
 		default:
-			printf("SOMETHING GOES WRONG WITH THE ITERATOR");
+			system("CLS");
+			STR_ConstStringToDraw = STR_ErrorHandle;
+			IN_StringLengh = strlen(STR_ErrorHandle);
+			IN_Fill_Width = (CI_GetXOfCMD - IN_StringLengh) / 2 + IN_StringLengh;
+			printf("%*s\n", IN_Fill_Width, STR_ConstStringToDraw);
+			IN_Iterator=1;
 			Menu();
 			break;
 		}
 
 
 
-	} while (IN_Iterator < 8);
+	} while (IN_Iterator < 10);
 
 }
 
@@ -143,3 +169,89 @@ int GetColumnWidth()
 #else
 int GetColumnWidth() { return 80; }
 #endif
+
+
+int GetOptionFromUser(int IN_OptionFromUser){
+
+
+	return(scanf("%d", &IN_OptionFromUser));
+
+}
+
+
+void VerifyOptionFromUser(int IN_OptionChoseByUser){
+
+	if (IN_OptionChoseByUser <= 6) {
+
+		switch (IN_OptionChoseByUser)
+		{
+		case 1:
+			InsertNewOperation();
+
+		case 2:
+			RemoveParticularOperation();
+
+		case 3:
+			ShowAllOperation();
+
+		case 4:
+			MinimalTimeOfJob();
+
+		case 5:
+			MaximalTimeOfJob();
+
+		case 6:
+			AverageTimeOfJob();
+		case 7:
+			exit(0);
+
+		default:
+			break;
+		}
+	}
+	else
+	{
+		system("CLS");
+		Menu();
+	}
+
+
+}
+
+
+int InsertNewOperation() {
+
+
+
+}
+int RemoveParticularOperation() {
+
+
+
+}
+int ShowAllOperation() {
+
+
+
+}
+int MinimalTimeOfJob() {
+
+
+
+
+
+}
+int MaximalTimeOfJob() {
+
+
+
+
+}
+
+int AverageTimeOfJob() {
+
+
+
+}
+
+

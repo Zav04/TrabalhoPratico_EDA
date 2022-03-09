@@ -1,9 +1,18 @@
 ﻿  Source_Code.c
-D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(63,36): warning C4090: '=': different 'const' qualifiers
-D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(73,39): warning C4090: '=': different 'const' qualifiers
-D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(82,39): warning C4090: '=': different 'const' qualifiers
-D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(90,39): warning C4090: '=': different 'const' qualifiers
-D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(98,39): warning C4090: '=': different 'const' qualifiers
-D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(106,39): warning C4090: '=': different 'const' qualifiers
-D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(114,39): warning C4090: '=': different 'const' qualifiers
-D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(127): error C4703: potentially uninitialized local pointer variable 'STR_ConstStringToDraw' used
+D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(67,36): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(75,39): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(83,39): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(91,39): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(99,39): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(107,39): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(115,39): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(123,39): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(131,41): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(140,43): warning C4090: '=': different 'const' qualifiers
+Source_Code.obj : error LNK2019: unresolved external symbol _InsertNewOperation referenced in function _VerifyOptionFromUser
+Source_Code.obj : error LNK2019: unresolved external symbol _RemoveParticularOperation referenced in function _VerifyOptionFromUser
+Source_Code.obj : error LNK2019: unresolved external symbol _ShowAllOperation referenced in function _VerifyOptionFromUser
+Source_Code.obj : error LNK2019: unresolved external symbol _MinimalTimeOfJob referenced in function _VerifyOptionFromUser
+Source_Code.obj : error LNK2019: unresolved external symbol _MaximalTimeOfJob referenced in function _VerifyOptionFromUser
+Source_Code.obj : error LNK2019: unresolved external symbol _AverageTimeOfJob referenced in function _VerifyOptionFromUser
+D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Debug\TrabalhoPratico_EDA.exe : fatal error LNK1120: 6 unresolved externals
