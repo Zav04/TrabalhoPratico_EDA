@@ -1,18 +1,18 @@
 ﻿  Source_Code.c
-D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(67,36): warning C4090: '=': different 'const' qualifiers
-D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(75,39): warning C4090: '=': different 'const' qualifiers
-D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(83,39): warning C4090: '=': different 'const' qualifiers
-D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(91,39): warning C4090: '=': different 'const' qualifiers
-D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(99,39): warning C4090: '=': different 'const' qualifiers
-D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(107,39): warning C4090: '=': different 'const' qualifiers
-D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(115,39): warning C4090: '=': different 'const' qualifiers
-D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(123,39): warning C4090: '=': different 'const' qualifiers
-D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(131,41): warning C4090: '=': different 'const' qualifiers
-D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(140,43): warning C4090: '=': different 'const' qualifiers
-Source_Code.obj : error LNK2019: unresolved external symbol _InsertNewOperation referenced in function _VerifyOptionFromUser
-Source_Code.obj : error LNK2019: unresolved external symbol _RemoveParticularOperation referenced in function _VerifyOptionFromUser
-Source_Code.obj : error LNK2019: unresolved external symbol _ShowAllOperation referenced in function _VerifyOptionFromUser
-Source_Code.obj : error LNK2019: unresolved external symbol _MinimalTimeOfJob referenced in function _VerifyOptionFromUser
-Source_Code.obj : error LNK2019: unresolved external symbol _MaximalTimeOfJob referenced in function _VerifyOptionFromUser
-Source_Code.obj : error LNK2019: unresolved external symbol _AverageTimeOfJob referenced in function _VerifyOptionFromUser
-D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Debug\TrabalhoPratico_EDA.exe : fatal error LNK1120: 6 unresolved externals
+D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(77,36): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(85,39): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(93,39): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(101,39): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(109,39): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(117,39): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(125,39): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(133,39): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(141,41): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(150,43): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(237): warning C4716: 'RemoveParticularOperation': must return a value
+D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(255): warning C4716: 'MaximalTimeOfJob': must return a value
+D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(242): warning C4716: 'ShowAllOperation': must return a value
+D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(249): warning C4716: 'MinimalTimeOfJob': must return a value
+D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(232): warning C4716: 'InsertNewOperation': must return a value
+D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(261): warning C4716: 'AverageTimeOfJob': must return a value
+  TrabalhoPratico_EDA.vcxproj -> D:\IPCA\EIM\1Ano\2º Semestre\Estrutura de Dados\Trabalho Pratico 1\DESENVOLVIMENTO\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Debug\TrabalhoPratico_EDA.exe

@@ -7,6 +7,16 @@
 #include <Windows.h>
 #include "Functions.h"
 
+struct Jobs {
+
+	int IN_Process;
+	int IN_NumberofMachine;
+	int IN_TimeToProcess;
+	
+
+
+}*Jobs;
+
 //Main Function
 int main() {
 
@@ -47,7 +57,7 @@ void WriteCenterTextMenu() {
 
 	//Strings of Menu
 	char* STR_ConstStringToDraw;
-	const char* STR_Menu = "Menu";
+	const char* STR_Menu = "***********************OPERATION MENU***********************";
 	const char* STR_Option1 = "1-Insertion of a New Operation";
 	const char* STR_Option2 = "2-Removal of a particular operation";
 	const char* STR_Option3 = "3-Show all operations";
@@ -181,8 +191,6 @@ int GetOptionFromUser(int IN_OptionFromUser){
 
 void VerifyOptionFromUser(int IN_OptionChoseByUser){
 
-	if (IN_OptionChoseByUser <= 6) {
-
 		switch (IN_OptionChoseByUser)
 		{
 		case 1:
@@ -206,20 +214,18 @@ void VerifyOptionFromUser(int IN_OptionChoseByUser){
 			exit(0);
 
 		default:
+			system("CLS");
+			Menu();
 			break;
 		}
-	}
-	else
-	{
-		system("CLS");
-		Menu();
-	}
-
-
 }
 
 
+
+
 int InsertNewOperation() {
+
+
 
 
 
