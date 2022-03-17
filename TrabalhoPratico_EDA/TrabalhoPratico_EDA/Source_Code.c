@@ -1,25 +1,11 @@
-#include <stdio.h>
-#include <locale.h>
-#include <time.h>
-#include <wchar.h>
-#include <stdlib.h>
-#include <string.h>
-#include <Windows.h>
 #include "Functions.h"
 
-struct Jobs {
 
-	int IN_Process;
-	int IN_NumberofMachine;
-	int IN_TimeToProcess;
-	
-
-
-}*Jobs;
 
 //Main Function
 int main() {
 
+	
 	//Set language in Portuguese orthography
 	setlocale(LC_ALL, "portuguese");
 
@@ -224,12 +210,100 @@ void VerifyOptionFromUser(int IN_OptionChoseByUser){
 
 
 int InsertNewOperation() {
+	
+	int IN_Machines=-1;
+	char CH_NameOfOperation[99999];
+	int IN_NumberofMachine[99999];
+	int IN_TimeToProcess[99999];
+
+	//Apontador para a primeira lista ligada.
+	ST_Jobs* ST_AddJobsNext = NULL;
+	ST_Jobs* ST_AddJobsBefore = NULL;
+
+	system("CLS");
+	printf("Whats the name of new operation?\n");
+	printf("R:");
+	scanf("%s", &CH_NameOfOperation);
+
+
+
+
+	printf("\nHow machines you want to Add?\n");
+	printf("R:");
+	scanf("%d", &IN_Machines);
+
+	if (IN_Machines > 0)
+	{
+		for (int i = 1; i <= IN_Machines; i++)
+		{
+			printf("\nNumber of %d Machine :\n", i);
+			printf("R:");
+			scanf("%d", &IN_NumberofMachine[i-1]);
+
+			printf("\nTime to process the job of %d :\n", IN_NumberofMachine[i-1]);
+			printf("R:");
+			scanf("%d", &IN_TimeToProcess[i-1]);
+
+		}
+
+		InsertNewOperationToList(&ST_AddJobsNext, &ST_AddJobsBefore, &IN_Machines, &CH_NameOfOperation,&IN_NumberofMachine,&IN_TimeToProcess);
+
+
+
+	}
+	else {
+
+		system("CLS");
+		printf("You insert a wrong number, please insert a new one\n");
+		InsertNewOperation();
+
+	}
 
 
 
 
 
 }
+
+ST_Jobs* InsertNewOperationToList(ST_Jobs* ST_AddToNextStruct, ST_Jobs* ST_StructBefore, int* IN_NumberOfMachines, char* IN_NameofProcess, int* IN_MachineNumber, int* IN_TimeofProcess) {
+
+
+	ST_Jobs ST_NewListJob;
+	ST_NewListJob = (ST_Jobs)malloc(sizeof(ST_Jobs));
+
+	//ST_NewListJob->PST_Next = ST_AddToNextStruct;
+	//ST_NewListJob->PST_Before = NULL;
+
+	if (ST_NewListJob != NULL) {
+
+		ST_NewListJob->IN_SizeOfName = strlen(IN_NameofProcess);
+		strcpy(ST_NewListJob->IN_NameofProcess, IN_NameofProcess);
+
+		for (int i = 0; i < IN_NumberOfMachines; i++)
+		{
+
+			ST_NewListJob->IN_NumberofMachine[i] = IN_NumberOfMachines[i];
+			ST_NewListJob->IN_TimeToProcess[i] = IN_TimeofProcess[i];
+
+	
+		}
+
+		if(ST_NewListJob != NULL)(*ST_AddToNextStruct)->P_ST_Before = ST_NewListJob;
+		if (ST_NewListJob == NULL) *ST_StructBefore = ST_NewListJob;
+
+	}
+	else
+	{
+
+		return(ST_NewListJob);
+
+	}
+
+
+}
+
+
+
 int RemoveParticularOperation() {
 
 
