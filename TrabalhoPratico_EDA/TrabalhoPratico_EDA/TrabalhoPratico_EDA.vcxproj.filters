@@ -18,9 +18,21 @@
     <ClCompile Include="Source_Code.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Menu.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OptionFromUser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InsertNewOperation.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Functions.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Struct_Jobs.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
