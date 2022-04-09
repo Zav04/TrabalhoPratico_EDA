@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "functions.h": "c",
+        "struct_jobs.h": "c"
+    }
+}
