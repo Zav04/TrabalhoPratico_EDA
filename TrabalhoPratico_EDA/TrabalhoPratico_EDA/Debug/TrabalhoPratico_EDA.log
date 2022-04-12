@@ -1,40 +1,41 @@
 ﻿  Source_Code.c
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(21,52): warning C4047: 'function': 'ST_Jobs *' differs in levels of indirection from 'ST_Jobs'
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(21,35): warning C4024: 'ReadDataOfFile': different types for formal and actual parameter 1
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(28,59): warning C4047: 'function': 'ST_Jobs *' differs in levels of indirection from 'ST_Jobs'
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(28,42): warning C4024: 'VerifyOptionFromUser': different types for formal and actual parameter 1
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(67,36): warning C4090: '=': different 'const' qualifiers
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(75,39): warning C4090: '=': different 'const' qualifiers
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(83,39): warning C4090: '=': different 'const' qualifiers
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(91,39): warning C4090: '=': different 'const' qualifiers
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(99,39): warning C4090: '=': different 'const' qualifiers
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(107,39): warning C4090: '=': different 'const' qualifiers
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(115,39): warning C4090: '=': different 'const' qualifiers
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(123,39): warning C4090: '=': different 'const' qualifiers
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(131,41): warning C4090: '=': different 'const' qualifiers
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(140,43): warning C4090: '=': different 'const' qualifiers
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(172,27): warning C4047: 'return': 'int' differs in levels of indirection from 'int *'
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(176,38): warning C4028: formal parameter 1 different from declaration
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(185,49): warning C4047: 'function': 'ST_Jobs *' differs in levels of indirection from 'ST_Jobs'
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(185,29): warning C4024: 'InsertNewOperation': different types for formal and actual parameter 1
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(191,40): warning C4047: 'function': 'ST_Jobs *' differs in levels of indirection from 'ST_Jobs'
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(191,20): warning C4024: 'ShowAllOperation': different types for formal and actual parameter 1
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(211,36): warning C4028: formal parameter 1 different from declaration
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(245,66): warning C4047: 'function': 'ST_Jobs *' differs in levels of indirection from 'ST_Jobs'
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(245,49): warning C4024: 'InsertNewOperationToList': different types for formal and actual parameter 1
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(247,37): warning C4047: 'function': 'ST_Jobs *' differs in levels of indirection from 'ST_Jobs'
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(247,20): warning C4024: 'WriteDataToFile': different types for formal and actual parameter 1
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(214,7): warning C4101: 'CH_NameOfJob': unreferenced local variable
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(268,42): warning C4028: formal parameter 1 different from declaration
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(294,30): warning C4028: formal parameter 1 different from declaration
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(349,29): warning C4028: formal parameter 1 different from declaration
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(372,32): warning C4028: formal parameter 1 different from declaration
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(209): warning C4715: 'VerifyOptionFromUser': not all control paths return a value
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(319): warning C4716: 'ShowAllOperation': must return a value
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(326): warning C4716: 'RemoveParticularOperation': must return a value
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(264): warning C4715: 'InsertNewOperation': not all control paths return a value
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(332): warning C4716: 'MinimalTimeOfJob': must return a value
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(339): warning C4716: 'MaximalTimeOfJob': must return a value
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(345): warning C4716: 'AverageTimeOfJob': must return a value
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(369): warning C4716: 'WriteDataToFile': must return a value
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Struct_Jobs.h(3,1): warning C4005: '_CRT_SECURE_NO_WARNINGS': macro redefinition
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c : message : see previous definition of '_CRT_SECURE_NO_WARNINGS'
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(22,54): warning C4047: 'function': 'ST_Jobs *' differs in levels of indirection from 'ST_Jobs'
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(22,37): warning C4024: 'ReadDataOfFile': different types for formal and actual parameter 1
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(30,59): warning C4047: 'function': 'ST_Jobs *' differs in levels of indirection from 'ST_Jobs'
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(30,42): warning C4024: 'VerifyOptionFromUser': different types for formal and actual parameter 1
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(69,36): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(77,39): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(85,39): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(93,39): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(101,39): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(109,39): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(117,39): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(125,39): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(133,41): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(142,43): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(174,27): warning C4047: 'return': 'int' differs in levels of indirection from 'int *'
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(178,38): warning C4028: formal parameter 1 different from declaration
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(187,65): warning C4047: 'function': 'ST_Jobs *' differs in levels of indirection from 'ST_Jobs'
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(187,45): warning C4024: 'InsertNewOperation': different types for formal and actual parameter 1
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(193,40): warning C4047: 'function': 'ST_Jobs *' differs in levels of indirection from 'ST_Jobs'
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(193,20): warning C4024: 'ShowAllOperation': different types for formal and actual parameter 1
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(213,36): warning C4028: formal parameter 1 different from declaration
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(247,67): warning C4047: 'function': 'ST_Jobs *' differs in levels of indirection from 'ST_Jobs'
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(247,50): warning C4024: 'InsertNewOperationToList': different types for formal and actual parameter 1
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(249,37): warning C4047: 'function': 'ST_Jobs *' differs in levels of indirection from 'ST_Jobs'
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(249,20): warning C4024: 'WriteDataToFile': different types for formal and actual parameter 1
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(216,7): warning C4101: 'CH_NameOfJob': unreferenced local variable
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(266,42): warning C4028: formal parameter 1 different from declaration
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(292,30): warning C4028: formal parameter 1 different from declaration
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(375,29): warning C4028: formal parameter 1 different from declaration
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(398,32): warning C4028: formal parameter 1 different from declaration
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(211): warning C4715: 'VerifyOptionFromUser': not all control paths return a value
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(262): warning C4715: 'InsertNewOperation': not all control paths return a value
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(358): warning C4716: 'MinimalTimeOfJob': must return a value
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(323): warning C4716: 'ShowAllOperation': must return a value
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(365): warning C4716: 'MaximalTimeOfJob': must return a value
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(371): warning C4716: 'AverageTimeOfJob': must return a value
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(395): warning C4716: 'WriteDataToFile': must return a value
   TrabalhoPratico_EDA.vcxproj -> D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Debug\TrabalhoPratico_EDA.exe

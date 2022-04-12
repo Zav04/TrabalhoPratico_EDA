@@ -1,7 +1,7 @@
 #include "Functions.h"
 
+
 int main() {
-	//ST_Jobs* ST_AddProcess = NULL;
 	//Set language in Portuguese orthography
 	setlocale(LC_ALL, "portuguese");
 
@@ -15,9 +15,8 @@ int main() {
 
 //Function Menu to start draw the functions
 void Menu() {
-
 	//Create the starting struct
-	ST_Jobs ST_AddJobsProcess = NULL;
+	ST_Jobs *ST_AddJobsProcess = NULL;
 
 	//Load Data from File
 	ST_AddJobsProcess = ReadDataOfFile(ST_AddJobsProcess);
@@ -28,7 +27,7 @@ void Menu() {
 		int IN_OptionFromUser = -1;
 		WriteCenterTextMenu();
 		GetOptionFromUser(&IN_OptionFromUser);
-		ST_AddJobsProcess=VerifyOptionFromUser(ST_AddJobsProcess,&IN_OptionFromUser);
+		ST_AddJobsProcess = VerifyOptionFromUser(ST_AddJobsProcess,&IN_OptionFromUser);
 
 	} while (true);
 
@@ -52,12 +51,13 @@ void WriteCenterTextMenu() {
 	char* STR_ConstStringToDraw;
 	const char* STR_Menu = "***********************OPERATION MENU***********************";
 	const char* STR_Option1 = "1-Insertion of a New Operation";
-	const char* STR_Option2 = "2-Removal of a particular operation";
-	const char* STR_Option3 = "3-Show all operations";
-	const char* STR_Option4 = "4-Minimum  time to complete a job";
-	const char* STR_Option5 = "5-Maximum time to complete a job";
-	const char* STR_Option6 = "6-Average time to complete a job";
-	const char* STR_Option7 = "7-Exit";
+	const char* STR_Option2 = "2-Remove a particular operation";
+	const char* STR_Option3 = "3-Change a particular operation";
+	const char* STR_Option4 = "4-Show all operations";
+	const char* STR_Option5 = "5-Minimum  time to complete a job";
+	const char* STR_Option6 = "6-Maximum time to complete a job";
+	const char* STR_Option7 = "7-Average time to complete a job";
+	const char* STR_Option8 = "8-Exit";
 	const char* STR_Operation = "OPERATION: ";
 	const char* STR_ErrorHandle = "SOMETHING GOES WRONG WITH THE ITERATOR";
 
@@ -131,6 +131,14 @@ void WriteCenterTextMenu() {
 			break;
 
 		case 9:
+			STR_ConstStringToDraw = STR_Option8;
+			IN_StringLengh = strlen(STR_Option8);
+			IN_Fill_Width = (CI_GetXOfCMD - IN_StringLengh) / 2 + IN_StringLengh;
+			printf("%*s\n", IN_Fill_Width, STR_ConstStringToDraw);
+			IN_Iterator++;
+			break;
+
+		case 10:
 			STR_ConstStringToDraw = STR_Operation;
 			IN_StringLengh = strlen(STR_Operation);
 			IN_Fill_Width = (CI_GetXOfCMD - IN_StringLengh) / 2 + IN_StringLengh;
@@ -150,7 +158,7 @@ void WriteCenterTextMenu() {
 		}
 
 
-	} while (IN_Iterator < 10);
+	} while (IN_Iterator <11);
 
 }
 
@@ -176,45 +184,50 @@ int GetOptionFromUser(int* IN_OptionFromUser) {
 
 }
 
-ST_Jobs VerifyOptionFromUser(ST_Jobs ST_AddJobsProcess ,int* IN_OptionChoseByUser) {
+ST_Jobs *VerifyOptionFromUser(ST_Jobs *ST_AddJobsProcess ,int* IN_OptionChoseByUser) {
 
-	ST_Jobs ST_NewAddJobsProcess = ST_AddJobsProcess;
+	ST_Jobs *ST_NewAddJobsProcess = ST_AddJobsProcess;
 
 
 	switch (*IN_OptionChoseByUser)
 	{
 	case 1:
 		system("CLS");
-		return(InsertNewOperation(ST_NewAddJobsProcess));
+		ST_NewAddJobsProcess = InsertNewOperation(ST_NewAddJobsProcess);
+		return(ST_NewAddJobsProcess);
 	case 2:
-		//RemoveParticularOperation();
+		ST_NewAddJobsProcess=RemoveParticularOperation(ST_NewAddJobsProcess);
+		return(ST_NewAddJobsProcess);
 		break;
 	case 3:
-		ShowAllOperation(ST_NewAddJobsProcess);
-		return(ST_NewAddJobsProcess);
+		//()
+		break;
 	case 4:
+		ShowAllOperation(ST_NewAddJobsProcess,TRUE);
+		return(ST_NewAddJobsProcess);
+	case 5:
 		MinimalTimeOfJob();
 		break;
-	case 5:
+	case 6:
 		MaximalTimeOfJob();
 		break;
-	case 6:
+	case 7:
 		AverageTimeOfJob();
 		break;
-	case 7:
+	case 8:
 		exit(0);
-		return(ST_NewAddJobsProcess);
+		//return(ST_NewAddJobsProcess);
 	default:
 		Menu();
 		return(ST_NewAddJobsProcess);
 	}
 }
 
-ST_Jobs InsertNewOperation(ST_Jobs ST_AddJobsProcess) {
+ST_Jobs *InsertNewOperation(ST_Jobs *ST_AddJobsProcess) {
 
 	int IN_Machines = -1;
-	char CH_NameOfJob[99];
-	char CH_NameOfOperation[99];
+	char CH_NameOfJob[50];
+	char CH_NameOfOperation[50];
 	int IN_NumberofMachine;
 	int IN_TimeToProcess;
 
@@ -244,14 +257,11 @@ ST_Jobs InsertNewOperation(ST_Jobs ST_AddJobsProcess) {
 			printf("R:");
 			scanf("%d", &IN_TimeToProcess);
 
-			ST_AddJobsProcess = InsertNewOperationToList(ST_AddJobsProcess,CH_NameOfOperation, IN_NumberofMachine, IN_TimeToProcess);
+ 			ST_AddJobsProcess = InsertNewOperationToList(ST_AddJobsProcess,CH_NameOfOperation, IN_NumberofMachine, IN_TimeToProcess);
 
 			WriteDataToFile(ST_AddJobsProcess);
-			return(ST_AddJobsProcess);
 		}
-
-		printf("Operation Saved\n");
-		system("PAUSE");
+		return(ST_AddJobsProcess);
 
 	}
 	else
@@ -260,16 +270,15 @@ ST_Jobs InsertNewOperation(ST_Jobs ST_AddJobsProcess) {
 		printf("Number of machines not Correct Insert the Operation again\n");
 		InsertNewOperation(ST_AddJobsProcess);
 
-
 	}
 
 }
 
 
 
-ST_Jobs InsertNewOperationToList(ST_Jobs ST_AddJobsProcess, char IN_NameofProcess[99], int IN_MachineNumber, int IN_TimeofProcess) {
+ST_Jobs *InsertNewOperationToList(ST_Jobs *ST_AddJobsProcess, char IN_NameofProcess[50], int IN_MachineNumber, int IN_TimeofProcess) {
 
-	ST_Jobs ST_NewListJob = (ST_Jobs)malloc(sizeof(ST_Jobs));
+	ST_Jobs *ST_NewListJob = (ST_Jobs*) malloc(sizeof(ST_Jobs));
 
 	if (ST_NewListJob != NULL) {
 		
@@ -293,60 +302,116 @@ ST_Jobs InsertNewOperationToList(ST_Jobs ST_AddJobsProcess, char IN_NameofProces
 
 
 
-int ShowAllOperation(ST_Jobs ST_AddReadProcess) {
+void ShowAllOperation(ST_Jobs *ST_AddReadProcess, bool B_Pause) {
 
 	system("CLS");
 
 
-	char Name[99]="";
-	int Number1=0, Number2=0;
+	char CH_Name[50]="";
+	char CH_AuxJob[50] = "";
+	int IN_NumberOfMachine = 0, IN_TimeToProcess = 0;
+
+	if (ST_AddReadProcess != NULL) {
+
+		printf("----------------------OPERATION----------------------\n");
+		while (ST_AddReadProcess != NULL)
+		{
+			strcpy(CH_Name, ST_AddReadProcess->IN_NameofProcess);
+			IN_NumberOfMachine = ST_AddReadProcess->IN_NumberofMachine;
+			IN_TimeToProcess = ST_AddReadProcess->IN_TimeToProcess;
+
+			if (strcmp(CH_AuxJob, CH_Name) != 0) {
+				printf("____________________________________________________\n");
+				printf("Name of Job: %s\n", CH_Name);
+				printf("\tNumber Of Machine: %d\t", IN_NumberOfMachine);
+				printf("Time to Process: %d\n", IN_TimeToProcess);
+				ST_AddReadProcess = ST_AddReadProcess->P_ST_Next;
+				strcpy(CH_AuxJob,CH_Name);
+			}
+			else {
+
+				printf("\tNumber Of Machine: %d\t", IN_NumberOfMachine);
+				printf("Time to Process: %d\n", IN_TimeToProcess);
+				ST_AddReadProcess = ST_AddReadProcess->P_ST_Next;
+			}
 
 
-	while (ST_AddReadProcess != NULL)
+		}
+	}
+	else
 	{
-		strcpy(Name, ST_AddReadProcess->IN_NameofProcess);
-		Number1 = ST_AddReadProcess->IN_NumberofMachine;
-		Number2 = ST_AddReadProcess->IN_TimeToProcess;
-
-		printf("\t\t________________JOBS___________________\n");
-		printf("Name of Process: %s\n", Name);
-		printf("Number Of Machine: %d\n", Number1);
-		printf("Time to Process: %d\n", Number2);
-		printf("___________________________________\n");
-		ST_AddReadProcess = ST_AddReadProcess->P_ST_Next;
-
+		printf("____________________________________________________\n");
+		printf("NO JOBS FOUNDED\n");
+		printf("____________________________________________________\n");
+	}
+	if (B_Pause == TRUE) {
+		system("PAUSE");
 	}
 
-	system("PAUSE");
 
 }
 
 
-//ST_Jobs RemoveParticularOperation(ST_Jobs ST_RemoveProcess, char NumeroDaOperaçãoARemover) {
-//
-//	ST_Jobs ST_Aux;
-//	int IN_RemovedMemory = 0;
-//	
-//	while (ST_RemoveProcess !=NULL)
-//	{
-//		ST_Aux = ST_RemoveProcess;
-//		if (strcmp(ST_RemoveProcess->IN_NameofProcess,NumeroDaOperaçãoARemover)==0) {
-//
-//			free(ST_Aux);
-//			IN_RemovedMemory = 1;
-//
-//		}
-//
-//		ST_RemoveProcess = ST_RemoveProcess->P_ST_Next;
-//
-//	}
-//
-//	if (IN_RemovedMemory == 0) 
-//		printf("Any Job with that %s name", NumeroDaOperaçãoARemover);
-// 
-//	return(ST_RemoveProcess);
-//
-//}
+ST_Jobs *RemoveParticularOperation(ST_Jobs *ST_RemoveProcess) {
+
+	ShowAllOperation(ST_RemoveProcess,FALSE);
+	ST_Jobs* ST_AllNodes = ST_RemoveProcess;
+	ST_Jobs* ST_AtualNode = ST_RemoveProcess, * ST_BeforeNode;
+	char CH_OperationToRemove[50];
+
+	printf("____________________________________________________\n");
+	printf("\nWhat's the name of the Job you want to remove?\n");
+	printf("R: ");
+	scanf("%s", CH_OperationToRemove);
+	
+	if (strcmp(CH_OperationToRemove, ST_RemoveProcess->IN_NameofProcess) == 0)
+	{
+		ST_RemoveProcess = ST_AtualNode->P_ST_Next;
+		free(ST_AtualNode);
+	}
+	else
+	{
+		ST_BeforeNode = ST_RemoveProcess;
+		ST_AtualNode = ST_BeforeNode->P_ST_Next;
+		while ((ST_AtualNode != NULL) && (strcmp(ST_BeforeNode->IN_NameofProcess, CH_OperationToRemove) != 0))
+		{
+			ST_BeforeNode = ST_AtualNode;
+			ST_AtualNode = ST_AtualNode->P_ST_Next;
+		}
+		if (ST_AtualNode != NULL)
+		{
+			ST_BeforeNode->P_ST_Next = ST_AtualNode->P_ST_Next;
+			free(ST_AtualNode);
+		}
+	}
+
+	if (ST_AllNodes != NULL) {
+		remove("Jobs.txt");
+		WriteDataToFile(ST_AllNodes);
+		printf("\nOperação Removida com Sucesso\n");
+		system("PAUSE");
+	}
+	else
+	{
+		remove("Jobs.txt");
+		FILE* FileToReWrite = fopen("Jobs.txt", "a");
+		fclose(FileToReWrite);
+		
+	}
+
+	return(ST_RemoveProcess);
+}
+
+
+
+ST_Jobs* ChangeParticularOperation() {
+
+
+
+
+
+
+}
 
 
 
@@ -371,7 +436,7 @@ int AverageTimeOfJob() {
 
 
 
-int WriteDataToFile(ST_Jobs ST_AddJobsProcess) {
+int WriteDataToFile(ST_Jobs *ST_AddJobsProcess) {
 
 	FILE* FileToWrite = fopen("Jobs.txt", "a");
 
@@ -379,7 +444,7 @@ int WriteDataToFile(ST_Jobs ST_AddJobsProcess) {
 
 		fprintf(FileToWrite, "%s;", ST_AddJobsProcess->IN_NameofProcess);
 		fprintf(FileToWrite, "%d;", ST_AddJobsProcess->IN_NumberofMachine);
-		fprintf(FileToWrite, "%d;", ST_AddJobsProcess->IN_TimeToProcess);
+		fprintf(FileToWrite, "%d", ST_AddJobsProcess->IN_TimeToProcess);
 		fprintf(FileToWrite, "\n");
 		fclose(FileToWrite);
 
@@ -394,29 +459,31 @@ int WriteDataToFile(ST_Jobs ST_AddJobsProcess) {
 }
 
 
-ST_Jobs ReadDataOfFile(ST_Jobs ST_AddJobsProcess) {
+ST_Jobs *ReadDataOfFile(ST_Jobs *ST_AddJobsProcess) {
 
 	FILE* FileToRead = fopen("Jobs.txt", "r");
 
-	char CH_TextFromFile[99];
+	char CH_TextFromFile[999];
 	int IN_Iterator = 0;
 	char* P_CH_Token;
-	char CH_NameOfJob[99];
-	int IN_NumberOfMachine;
-	int IN_TimeToProcess;
+	char CH_NameOfJob[50];
+	int IN_NumberOfMachine=-1;
+	int IN_TimeToProcess=-1;
 
 
-	if (FileToRead != NULL) {
+		while (!feof(FileToRead)) {
 
-		while (fgets(CH_TextFromFile, sizeof(CH_TextFromFile), FileToRead)) {
+		fscanf(FileToRead, "%s", &CH_TextFromFile);
 
+		//ST_AddJobsProcess = InsertNewOperationToList(ST_AddJobsProcess, CH_NameOfJob, IN_NumberOfMachine, IN_TimeToProcess);
+		
 			P_CH_Token = strtok(CH_TextFromFile, ";");
-			while (P_CH_Token!= NULL){
+			while (P_CH_Token != NULL) {
 				switch (IN_Iterator)
 				{
 				case 0:
 
-					if (strcmp(P_CH_Token, "\n")==0) {
+					if (strcmp(P_CH_Token, "\n") == 0) {
 						P_CH_Token = strtok(NULL, ";");
 						IN_Iterator = 0;
 						break;
@@ -435,12 +502,10 @@ ST_Jobs ReadDataOfFile(ST_Jobs ST_AddJobsProcess) {
 				case 2:
 					IN_TimeToProcess = atoi(P_CH_Token);
 					P_CH_Token = strtok(NULL, ";");
-					IN_Iterator++;
-					break;
+					IN_Iterator = 0;
 
-				case 3:
+
 					ST_AddJobsProcess = InsertNewOperationToList(ST_AddJobsProcess, CH_NameOfJob, IN_NumberOfMachine, IN_TimeToProcess);
-					IN_Iterator=0;
 					break;
 
 				default:
@@ -448,12 +513,14 @@ ST_Jobs ReadDataOfFile(ST_Jobs ST_AddJobsProcess) {
 				}
 
 			}
-
 		}
 
-	}
-	return ST_AddJobsProcess;
+			fclose(FileToRead);
+			return ST_AddJobsProcess;
 }
+
+
+
 
 
 //Operações* RemoverOperação(Operações NOMEDaEstrutura, int NumeroDaOperaçãoARemover) {

@@ -19,11 +19,22 @@ typedef struct Jobs {
 
 	unsigned int IN_NumberofMachine;
 	unsigned int IN_TimeToProcess;
-	char IN_NameofProcess[99]; 
+	char IN_NameofProcess[50]; 
 	struct Jobs* P_ST_Next;
 	struct Jobs* P_ST_Before;
 
-}*ST_Jobs;
+}ST_Jobs;
+
+
+////typedef struct Operation {
+////
+////	char IN_NameofOperation[50];
+////	struct Jobs* ST_Job;
+////	struct Operation* P_ST_Next;
+////	struct Operation* P_ST_Before;
+////
+////}*ST_Operation;
+
 
 
 
