@@ -18,6 +18,33 @@
     <ClCompile Include="Source_Code.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Interface.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InsertNewOperation.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ShowAllOperation.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoveParticularOperation.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ReadAndWriteDataToFile.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MinimalTimeOfJob.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MaximalTimeOfJob.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AverageTimeOfJob.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeParticularOperation.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Functions.h">

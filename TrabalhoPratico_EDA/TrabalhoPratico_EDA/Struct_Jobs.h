@@ -17,23 +17,46 @@
 
 typedef struct Jobs {
 
+	char CH_NameofJob[50];
+	char CH_NameofProcess[50];
 	unsigned int IN_NumberofMachine;
 	unsigned int IN_TimeToProcess;
-	char IN_NameofProcess[50]; 
 	struct Jobs* P_ST_Next;
-	struct Jobs* P_ST_Before;
 
 }ST_Jobs;
 
 
-////typedef struct Operation {
-////
-////	char IN_NameofOperation[50];
-////	struct Jobs* ST_Job;
-////	struct Operation* P_ST_Next;
-////	struct Operation* P_ST_Before;
-////
-////}*ST_Operation;
+
+/*//Part 2
+
+typedef struct Jobs {
+
+	char CH_NameofJob[50];
+	struct Operation P_ST_Operation;
+	struct Jobs* P_ST_Next;
+
+}ST_Jobs;
+
+
+typedef struct Operation {
+
+	char CH_NameofOperation[50];
+	struct Machines* P_ST_Machines;
+	struct Operation* P_ST_Next;
+
+
+}ST_Operation;*/
+
+
+/*typedef struct Machines {
+
+	unsigned int IN_NumberofMachine;
+	unsigned int IN_TimeToProcess;
+	struct Machines* P_ST_Next;
+
+
+}ST_Operation; */
+
 
 
 

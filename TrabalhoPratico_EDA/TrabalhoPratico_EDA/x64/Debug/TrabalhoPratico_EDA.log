@@ -1,33 +1,5 @@
-﻿  Source_Code.c
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(85,36): warning C4090: '=': different 'const' qualifiers
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(86,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(93,39): warning C4090: '=': different 'const' qualifiers
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(94,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(101,39): warning C4090: '=': different 'const' qualifiers
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(102,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(109,39): warning C4090: '=': different 'const' qualifiers
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(110,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(117,39): warning C4090: '=': different 'const' qualifiers
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(118,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(125,39): warning C4090: '=': different 'const' qualifiers
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(126,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(133,39): warning C4090: '=': different 'const' qualifiers
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(134,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(141,39): warning C4090: '=': different 'const' qualifiers
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(142,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(149,39): warning C4090: '=': different 'const' qualifiers
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(150,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(157,41): warning C4090: '=': different 'const' qualifiers
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(158,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(166,43): warning C4090: '=': different 'const' qualifiers
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(167,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(198,27): warning C4047: 'return': 'int' differs in levels of indirection from 'int *'
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(244,7): warning C4101: 'CH_NameOfJob': unreferenced local variable
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(239): warning C4715: 'VerifyOptionFromUser': not all control paths return a value
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(290): warning C4715: 'InsertNewOperation': not all control paths return a value
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(429): warning C4716: 'ChangeParticularOperation': must return a value
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(437): warning C4716: 'MinimalTimeOfJob': must return a value
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(444): warning C4716: 'MaximalTimeOfJob': must return a value
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(450): warning C4716: 'AverageTimeOfJob': must return a value
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(474): warning C4716: 'WriteDataToFile': must return a value
+﻿  ChangeParticularOperation.c
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\ChangeParticularOperation.c(6,18): warning C4013: 'ShowAllOperation' undefined; assuming extern returning int
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\ChangeParticularOperation.c(58,69): warning C4474: 'printf' : too many arguments passed for format string
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\ChangeParticularOperation.c(58,69): message : placeholders and their parameters expect 0 variadic arguments, but 1 were provided
   TrabalhoPratico_EDA.vcxproj -> D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\x64\Debug\TrabalhoPratico_EDA.exe

@@ -139,6 +139,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AverageTimeOfJob.c" />
+    <ClCompile Include="ChangeParticularOperation.c" />
+    <ClCompile Include="InsertNewOperation.c" />
+    <ClCompile Include="Interface.c" />
+    <ClCompile Include="MaximalTimeOfJob.c" />
+    <ClCompile Include="MinimalTimeOfJob.c" />
+    <ClCompile Include="ReadAndWriteDataToFile.c" />
+    <ClCompile Include="RemoveParticularOperation.c" />
+    <ClCompile Include="ShowAllOperation.c" />
     <ClCompile Include="Source_Code.c" />
   </ItemGroup>
   <ItemGroup>
