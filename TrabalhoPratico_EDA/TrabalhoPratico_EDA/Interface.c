@@ -143,11 +143,3 @@ int GetColumnWidth()
 	return ScreenInfo.dwSize.X;
 }
 
-int GetOptionFromUser(int* IN_OptionFromUser) 
-{
-
-	scanf("%d", IN_OptionFromUser);
-
-	return(IN_OptionFromUser);
-
-}

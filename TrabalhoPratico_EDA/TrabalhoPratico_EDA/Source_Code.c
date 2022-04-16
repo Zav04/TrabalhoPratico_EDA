@@ -40,6 +40,16 @@ void Menu() {
 }
 
 
+int GetOptionFromUser(int* IN_OptionFromUser)
+{
+
+	scanf("%d", IN_OptionFromUser);
+
+	return(IN_OptionFromUser);
+
+}
+
+
 //Verify and Open the Choice by User
 ST_Jobs *VerifyOptionFromUser(ST_Jobs *ST_AddJobsProcess ,int* IN_OptionChoseByUser) {
 

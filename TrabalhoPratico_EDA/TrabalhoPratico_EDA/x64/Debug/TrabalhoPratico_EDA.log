@@ -1,5 +1,7 @@
 ﻿  ChangeParticularOperation.c
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\ChangeParticularOperation.c(6,18): warning C4013: 'ShowAllOperation' undefined; assuming extern returning int
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\ChangeParticularOperation.c(58,69): warning C4474: 'printf' : too many arguments passed for format string
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\ChangeParticularOperation.c(58,69): message : placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\ChangeParticularOperation.c(7,18): warning C4013: 'ShowAllOperation' undefined; assuming extern returning int
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\ChangeParticularOperation.c(66,17): warning C4013: 'WriteDataToFile' undefined; assuming extern returning int
+  ReadAndWriteDataToFile.c
+  Generating Code...
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\ReadAndWriteDataToFile.c(38): warning C4716: 'WriteDataToFile': must return a value
   TrabalhoPratico_EDA.vcxproj -> D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\x64\Debug\TrabalhoPratico_EDA.exe

@@ -14,7 +14,7 @@
 #include <stdbool.h>
 
 
-
+//Dinamic List
 typedef struct Jobs {
 
 	char CH_NameofJob[50];

@@ -2,49 +2,53 @@
 
 int MaximalTimeOfJob(ST_Jobs* ST_MaximalTimeProces)
 {
+	ShowAllOperation(ST_MaximalTimeProces, FALSE);
+
 
 	ST_Jobs* ST_MaximalTimeofJob;
-	ST_Jobs* ST_Aux_MaximalTimeofJob = ST_MaximalTimeProces;
-
 	ST_MaximalTimeofJob = ST_MaximalTimeProces;
 
-	char Aux_Name[50];
-	int BestTime;
+	char CH_AuxName[50];
+	int IN_MaxTimeBestTime = 0;
+	int IN_AuxMaxTimeBestTime = 0;
+	int IN_MaxTimeJob = 0;
 
-	if (ST_MaximalTimeofJob != NULL) 
+	if (ST_MaximalTimeofJob != NULL)
 	{
-
 		while (ST_MaximalTimeofJob != NULL)
 		{
 
-		}
-		strcpy(Aux_Name,ST_MaximalTimeofJob->CH_NameofProcess);
+			if (strcmp(CH_AuxName, ST_MaximalTimeofJob->CH_NameofProcess) == 0)
+			{
+				if (IN_MaxTimeBestTime < ST_MaximalTimeofJob->IN_TimeToProcess)
+				{
+					IN_MaxTimeBestTime = ST_MaximalTimeofJob->IN_TimeToProcess;
+					//IN_AuxMaxTimeBestTime = IN_MaxTimeBestTime;
+				}
+				ST_MaximalTimeofJob = ST_MaximalTimeofJob->P_ST_Next;
 
+			}
+			else if (strcmp(CH_AuxName, ST_MaximalTimeofJob->CH_NameofProcess) != 0)
+			{
+
+				strcpy(CH_AuxName, ST_MaximalTimeofJob->CH_NameofProcess);
+				IN_MaxTimeJob = IN_MaxTimeJob + IN_MaxTimeBestTime;
+				IN_MaxTimeBestTime = 0;
+
+			}
+
+		}
+		IN_MaxTimeJob = IN_MaxTimeJob + IN_MaxTimeBestTime;
 
 
 	}
+	printf("The maximum time the job will take will be: ");
+	printf("%d\n", IN_MaxTimeJob);
+	printf("*****************************************************************************\n");
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	system("PAUSE");
 
 }
+
