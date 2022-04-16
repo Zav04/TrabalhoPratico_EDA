@@ -1,39 +1,27 @@
 #include "Functions.h"
 
 
-int WriteDataToFile(ST_Jobs* ST_AddJobsProcess) 
+void WriteDataToFile(ST_Jobs* ST_WriteJobsProcess)
 {
 
-	ST_Jobs* ST_WriteJob = (ST_Jobs*)malloc(sizeof(ST_Jobs));
+	remove("Jobs.txt");
 
-	ST_WriteJob = ST_AddJobsProcess;
-	//int testedel;
-	//testedel=remove("Jobs.txt");
+	ST_Jobs* ST_WriteJobProcess = ST_WriteJobsProcess;
 
-	////realpath("Jobs.txt");
-	//
-	//if (testedel == 0) 
-	//{
+
 	FILE* FileToWrite = fopen("Jobs.txt", "a");
-	//FILE* FileToWrite = fopen("Jobs.txt", "a");
-		if (FileToWrite != NULL) 
-		{
-		/*	while (ST_WriteJob != NULL) 
-			{	*/
-			fprintf(FileToWrite, "%s;", ST_WriteJob->CH_NameofProcess);
-			fprintf(FileToWrite, "%d;", ST_WriteJob->IN_NumberofMachine);
-			fprintf(FileToWrite, "%d;", ST_WriteJob->IN_TimeToProcess);
-			fprintf(FileToWrite, "\n");
-			ST_WriteJob = ST_WriteJob->P_ST_Next;
 
-		/*	}*/
-		fclose(FileToWrite);
-		}
-	//}
-	else
+
+	while (ST_WriteJobProcess != NULL)
 	{
-		printf("Error! Could not open file\n");
+		fprintf(FileToWrite, "%s;", ST_WriteJobProcess->CH_NameofProcess);
+		fprintf(FileToWrite, "%d;", ST_WriteJobProcess->IN_NumberofMachine);
+		fprintf(FileToWrite, "%d;", ST_WriteJobProcess->IN_TimeToProcess);
+		fprintf(FileToWrite, "\n");
+		ST_WriteJobProcess = ST_WriteJobProcess->P_ST_Next;
 	}
+
+	fclose(FileToWrite);
 
 }
 

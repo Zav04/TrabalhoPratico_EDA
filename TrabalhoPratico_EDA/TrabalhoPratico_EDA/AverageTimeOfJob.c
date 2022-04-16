@@ -1,7 +1,7 @@
 #include "Functions.h"
 
 
-int AverageTimeOfJob(ST_Jobs* ST_AverageTimeProces)
+void AverageTimeOfJob(ST_Jobs* ST_AverageTimeProces)
 {
 	ShowAllOperation(ST_AverageTimeProces, FALSE);
 

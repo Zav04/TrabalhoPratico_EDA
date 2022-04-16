@@ -1,6 +1,6 @@
 #include "Functions.h"
 
-int ShowAllOperation(ST_Jobs* ST_ShowReadProcess, BOOL B_Pause) 
+void ShowAllOperation(ST_Jobs* ST_ShowReadProcess, BOOL B_Pause)
 {
 
 	system("CLS");

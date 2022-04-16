@@ -1,7 +1,7 @@
 #include "Functions.h"
 
 
-int MinimalTimeOfJob(ST_Jobs* ST_MinimalTimeProces)
+void MinimalTimeOfJob(ST_Jobs* ST_MinimalTimeProces)
 {
 	ShowAllOperation(ST_MinimalTimeProces, FALSE);
 

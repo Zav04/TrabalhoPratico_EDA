@@ -1,6 +1,6 @@
 #include "Functions.h"
 
-int MaximalTimeOfJob(ST_Jobs* ST_MaximalTimeProces)
+void MaximalTimeOfJob(ST_Jobs* ST_MaximalTimeProces)
 {
 	ShowAllOperation(ST_MaximalTimeProces, FALSE);
 
