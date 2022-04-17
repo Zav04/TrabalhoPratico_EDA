@@ -40,6 +40,8 @@ ST_Jobs* ChangeParticularOperation(ST_Jobs* ST_ChangeJobsProcess)
 				IN_NoOperationFouned = 1;
 				printf("\nOperation %s successfully changed!\n", CH_OperationToRemove);
 				system("PAUSE");
+				system("CLS");
+				break;
 
 			}
 			ST_AuxChangeJobs = ST_AuxChangeJobs->P_ST_Next;
