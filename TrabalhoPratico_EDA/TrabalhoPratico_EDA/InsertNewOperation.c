@@ -14,7 +14,7 @@ ST_Jobs* InsertNewOperation(ST_Jobs* ST_AddJobsProcess)
 	printf("R:");
 	scanf("%s", &CH_NameOfJob);*/
 
-
+	system("CLS");
 	printf("What's the name of the Operation?\n");
 	printf("R:");
 	scanf("%s", &CH_NameOfOperation);
@@ -45,14 +45,16 @@ ST_Jobs* InsertNewOperation(ST_Jobs* ST_AddJobsProcess)
 		system("CLS");
 		printf("\nOperation are Saved\n");
 		system("PAUSE");
+		system("CLS");
 		return(ST_AddJobsProcess);
 
 	}
 	else
 	{
-
+		system("CLS");
 		printf("Number of machines not Correct Insert the Operation again\n");
 		system("PAUSE");
+		system("CLS");
 
 		return(ST_AddJobsProcess);
 

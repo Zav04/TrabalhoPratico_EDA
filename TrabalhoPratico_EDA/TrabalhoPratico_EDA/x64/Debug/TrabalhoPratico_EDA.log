@@ -1,6 +1,2 @@
-﻿  ShowAllOperation.c
-  Source_Code.c
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(48,27): warning C4047: 'return': 'int' differs in levels of indirection from 'int *'
-  Generating Code...
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Source_Code.c(88): warning C4715: 'VerifyOptionFromUser': not all control paths return a value
+﻿  ReadAndWriteDataToFile.c
   TrabalhoPratico_EDA.vcxproj -> D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\x64\Debug\TrabalhoPratico_EDA.exe

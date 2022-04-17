@@ -74,8 +74,22 @@ ST_Jobs* ReadDataOfFile(ST_Jobs* ST_AddJobsProcess) {
 
 		}
 
+		fclose(FileToRead);
+
 	}
-	fclose(FileToRead);
+	else
+	{
+		system("CLS");
+		printf("\t\t\t\tATTENTION! WAS NO FILE TO READ DATA! FILE TO SAVE DATA IS CREATED\n\n\n");
+
+		//Create a NewFile to Write Data
+		FILE* CreateFile = fopen("Jobs.txt", "w");
+		fclose(CreateFile);
+
+
+
+	}
+
 	//Return the List 
 	return ST_AddJobsProcess;
 }

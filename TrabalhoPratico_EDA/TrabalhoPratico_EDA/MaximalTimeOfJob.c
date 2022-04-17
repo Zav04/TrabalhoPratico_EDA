@@ -23,7 +23,7 @@ void MaximalTimeOfJob(ST_Jobs* ST_MaximalTimeProces)
 				if (IN_MaxTimeBestTime < ST_MaximalTimeofJob->IN_TimeToProcess)
 				{
 					IN_MaxTimeBestTime = ST_MaximalTimeofJob->IN_TimeToProcess;
-					//IN_AuxMaxTimeBestTime = IN_MaxTimeBestTime;
+
 				}
 				ST_MaximalTimeofJob = ST_MaximalTimeofJob->P_ST_Next;
 
@@ -37,6 +37,7 @@ void MaximalTimeOfJob(ST_Jobs* ST_MaximalTimeProces)
 
 			}
 
+
 		}
 		IN_MaxTimeJob = IN_MaxTimeJob + IN_MaxTimeBestTime;
 
@@ -49,6 +50,7 @@ void MaximalTimeOfJob(ST_Jobs* ST_MaximalTimeProces)
 
 
 	system("PAUSE");
+	system("CLS");
 
 }
 

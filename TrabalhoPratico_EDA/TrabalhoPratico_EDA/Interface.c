@@ -14,7 +14,7 @@ void WriteCenterTextMenu()
 	int IN_StringLengh = 0;
 
 	//Strings of Menu
-	system("CLS");
+	//system("CLS");
 	char* STR_ConstStringToDraw;
 	const char* STR_Menu = "***********************OPERATION MENU***********************";
 	const char* STR_Option1 = "1-Insertion of a New Operation";

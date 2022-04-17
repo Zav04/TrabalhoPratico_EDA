@@ -45,6 +45,7 @@ void MinimalTimeOfJob(ST_Jobs* ST_MinimalTimeProces)
 	printf("%d\n", IN_MinTimeJob);
 	printf("*****************************************************************************\n");
 	system("PAUSE");
+	system("CLS");
 
 }
 
