@@ -34,6 +34,7 @@ void ShowAllOperation(ST_Jobs* ST_ShowReadProcess, BOOL B_Pause)
 	if (B_Pause) 
 	{
 		system("PAUSE");
+		system("CLS");
 
 	}
 

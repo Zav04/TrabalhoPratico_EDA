@@ -1,4 +1,2 @@
-﻿  ChangeParticularOperation.c
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\ChangeParticularOperation.c(7,18): warning C4013: 'ShowAllOperation' undefined; assuming extern returning int
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\ChangeParticularOperation.c(68,17): warning C4013: 'WriteDataToFile' undefined; assuming extern returning int
+﻿  ShowAllOperation.c
   TrabalhoPratico_EDA.vcxproj -> D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\x64\Debug\TrabalhoPratico_EDA.exe
