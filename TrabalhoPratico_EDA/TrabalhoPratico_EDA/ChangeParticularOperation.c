@@ -10,14 +10,14 @@ ST_Jobs* ChangeParticularOperation(ST_Jobs* ST_ChangeJobsProcess)
 	int IN_DataChange;
 	char CH_OperationToRemove[50];
 
-
+	if (ST_AuxChangeJobs != NULL)
+	{
 	printf("_____________________________________________________________________________\n");
 	printf("\nWhat's the name of the Operation you want to change?\n");
 	printf("R: ");
 	scanf("%s", &CH_OperationToRemove);
 
-	if (ST_AuxChangeJobs != NULL)
-	{
+	
 		while (ST_AuxChangeJobs != NULL)
 		{
 			if (strcmp(ST_AuxChangeJobs->CH_NameofProcess, CH_OperationToRemove) == 0)
@@ -50,9 +50,10 @@ ST_Jobs* ChangeParticularOperation(ST_Jobs* ST_ChangeJobsProcess)
 	}
 	else
 	{
-		printf("*****************************************************************************\n");
-		printf("NO OPERATIONS FOUNDED\n");
-		printf("*****************************************************************************\n");
+		printf("NO OPERATIONS FOUNDED TO CHANGE\n");
+		system("PAUSE");
+		system("CLS");
+		return ST_ChangeJobsProcess;
 	}
 
 	if (IN_NoOperationFouned == 0)
@@ -61,6 +62,7 @@ ST_Jobs* ChangeParticularOperation(ST_Jobs* ST_ChangeJobsProcess)
 		printf("\nOperation %s not found!\n", CH_OperationToRemove);
 		printf("Please insert or verify the correct name of operation\n");
 		system("PAUSE");
+		system("CLS");
 
 	}
 

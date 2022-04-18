@@ -39,13 +39,22 @@ void MinimalTimeOfJob(ST_Jobs* ST_MinimalTimeProces)
 
 		IN_MinTimeJob = IN_MinTimeJob + IN_MinTimeBestTime;
 
+		printf("The minimum  time the job will take will be: ");
+		printf("%d\n", IN_MinTimeJob);
+		printf("*****************************************************************************\n");
+		system("PAUSE");
+		system("CLS");
+
 
 	}
-	printf("The minimum  time the job will take will be: ");
-	printf("%d\n", IN_MinTimeJob);
-	printf("*****************************************************************************\n");
-	system("PAUSE");
-	system("CLS");
+
+	else
+	{
+		printf("NO OPERATIONS FOUNDED TO CALCULATE THE MINIMAL TIME\n");
+		system("PAUSE");
+		system("CLS");
+	}
+
 
 }
 

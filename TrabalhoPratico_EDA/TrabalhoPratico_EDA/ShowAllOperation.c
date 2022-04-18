@@ -25,7 +25,7 @@ void ShowAllOperation(ST_Jobs* ST_ShowReadProcess, BOOL B_Pause)
 	else
 	{
 		printf("*****************************************************************************\n");
-		printf("NO JOBS FOUNDED\n");
+		printf("NO JOBS AND OPERATIONS FOUNDED\n");
 		printf("*****************************************************************************\n");
 
 	}

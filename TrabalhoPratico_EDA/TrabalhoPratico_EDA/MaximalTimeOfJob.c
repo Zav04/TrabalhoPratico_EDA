@@ -39,18 +39,22 @@ void MaximalTimeOfJob(ST_Jobs* ST_MaximalTimeProces)
 
 
 		}
+
 		IN_MaxTimeJob = IN_MaxTimeJob + IN_MaxTimeBestTime;
 
-
+		printf("The maximum time the job will take will be: ");
+		printf("%d\n", IN_MaxTimeJob);
+		printf("*****************************************************************************\n");
+		system("PAUSE");
+		system("CLS");
 	}
-	printf("The maximum time the job will take will be: ");
-	printf("%d\n", IN_MaxTimeJob);
-	printf("*****************************************************************************\n");
-
-
-
-	system("PAUSE");
-	system("CLS");
+	else
+	{
+		printf("NO OPERATIONS FOUNDED TO CALCULATE THE MAXIMAL TIME\n");
+		system("PAUSE");
+		system("CLS");
+	}
+	
 
 }
 

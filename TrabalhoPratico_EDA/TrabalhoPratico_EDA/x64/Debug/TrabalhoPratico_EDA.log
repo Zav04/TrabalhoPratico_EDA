@@ -1,2 +1,7 @@
-﻿  ShowAllOperation.c
+﻿  AverageTimeOfJob.c
+  MaximalTimeOfJob.c
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\MaximalTimeOfJob.c(23,28): warning C4018: '<': signed/unsigned mismatch
+  MinimalTimeOfJob.c
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\MinimalTimeOfJob.c(22,28): warning C4018: '>': signed/unsigned mismatch
+  Generating Code...
   TrabalhoPratico_EDA.vcxproj -> D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\x64\Debug\TrabalhoPratico_EDA.exe

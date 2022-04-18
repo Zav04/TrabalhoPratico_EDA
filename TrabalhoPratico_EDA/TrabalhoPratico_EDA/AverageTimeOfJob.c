@@ -26,11 +26,20 @@ void AverageTimeOfJob(ST_Jobs* ST_AverageTimeProces)
 
 		FLT_AverageTimeJob = IN_Total/IN_Counter;
 
+		printf("The average time the job will take will be: ");
+		printf("%f\n", FLT_AverageTimeJob);
+		printf("*****************************************************************************\n");
+		system("PAUSE");
+		system("CLS");
+
 	}
-	printf("The average time the job will take will be: ");
-	printf("%f\n", FLT_AverageTimeJob);
-	printf("*****************************************************************************\n");
-	system("PAUSE");
+	else
+	{
+		printf("NO OPERATIONS FOUNDED TO CALCULATE THE AVERAGE TIME\n");
+		system("PAUSE");
+		system("CLS");
+	}
+
 
 }
 
