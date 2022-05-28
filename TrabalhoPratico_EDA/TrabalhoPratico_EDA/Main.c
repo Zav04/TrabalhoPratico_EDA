@@ -15,11 +15,20 @@ int main() {
 //Function Menu to start draw the functions
 void Menu() {
 
-	//Create the starting struct
+	//Create the starting structs
 	ST_Jobs *ST_AddJobsProcess = NULL;
+	//ST_Operation* ST_AddOperationsProcess=NULL;
+	//ST_Machines *ST_AddMachinesProcess=NULL;
+
+	//Create connection between the 3 structs
+	//ST_AddJobsProcess->P_ST_Operation = ST_AddOperationsProcess;
+	//ST_AddJobsProcess->P_ST_Operation->P_ST_Machines = ST_AddMachinesProcess;
+
 
 	//Load Data to Lists from File
-	ST_AddJobsProcess = ReadDataOfFile(ST_AddJobsProcess);
+	//ST_AddJobsProcess = ReadDataOfFile(ST_AddJobsProcess);
+
+	//Variable to get option from user
 
 
 	//Infinit Loop to MENU

@@ -2,10 +2,10 @@
 
 /////////////////////////////////////////////////////////////////////////////////Functions Declarations/////////////////////////////////////////////////////////////////////////////////
 void Menu();
-void WriteCenterTextMenu();
+ST_Jobs* WriteCenterTextMenu();
 int GetColumnWidth();
 int GetOptionFromUser(int *IN_OptionFromUser);
-ST_Jobs *InsertNewOperationToList(ST_Jobs *ST_AddJobsProcess, char IN_NameofProcess[99], int IN_MachineNumber, int IN_TimeofProcess);
+void *InsertNewOperationToList(ST_Jobs *ST_AddJobsProcess, char IN_NameofProcess[99], int IN_MachineNumber, int IN_TimeofProcess);
 void WriteDataToFile(ST_Jobs *ST_WriteJobsProcess);
 ST_Jobs *ReadDataOfFile(ST_Jobs *ST_ReadJobsProcess);
 ST_Jobs *VerifyOptionFromUser(ST_Jobs *ST_AddJobsProcess,int *IN_OptionChoseByUser);
@@ -16,6 +16,18 @@ void ShowAllOperation(ST_Jobs *ST_ShowReadProcess,BOOL B_Pause);
 void MinimalTimeOfJob(ST_Jobs* ST_MinimalTimeProces);
 void MaximalTimeOfJob(ST_Jobs* ST_MaximalTimeProces);
 void AverageTimeOfJob(ST_Jobs* ST_AverageTimeProces);
+
+
+//Jobs Menu
+void WriteJobMenuInCenter();
+ST_Jobs* MainFromJobs();
+
+
+//Operation Menu
+ST_Jobs* WriteOperationMenuInCenter();
+
+//Machines Menu
+ST_Jobs* WriteMachinesMenuInCenter();
 
 /////////////////////////////////////////////////////////////////////////////////Functions Declarations/////////////////////////////////////////////////////////////////////////////////
 

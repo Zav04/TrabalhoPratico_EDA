@@ -14,50 +14,27 @@ int GetOptionFromUser(int* IN_OptionFromUser)
 //Verify and Open the Choice by User
 ST_Jobs* VerifyOptionFromUser(ST_Jobs* ST_AddJobsProcess, int* IN_OptionChoseByUser)
 {
-
-	ST_Jobs* ST_NewAddJobsProcess = ST_AddJobsProcess;
+	ST_Jobs* ST_NewAddProcess = ST_AddJobsProcess;
 
 	switch (*IN_OptionChoseByUser)
 	{
-	case 1:
-		return(InsertNewOperation(ST_NewAddJobsProcess));
 
+	case 1:
+		ST_NewAddProcess=MainFromJobs(ST_AddJobsProcess);
 
 	case 2:
-		return(RemoveParticularOperation(ST_NewAddJobsProcess));
-
+		ST_NewAddProcess=WriteOperationMenuInCenter(ST_AddJobsProcess);
 
 	case 3:
-		return(ChangeParticularOperation(ST_NewAddJobsProcess));
+		ST_NewAddProcess=WriteMachinesMenuInCenter(ST_AddJobsProcess);
 
-
-	case 4:
-		ShowAllOperation(ST_NewAddJobsProcess, TRUE);
-		return(ST_NewAddJobsProcess);
-
-
-	case 5:
-		MinimalTimeOfJob(ST_NewAddJobsProcess);
-		return(ST_NewAddJobsProcess);
-
-
-	case 6:
-		MaximalTimeOfJob(ST_NewAddJobsProcess);
-		return(ST_NewAddJobsProcess);
-
-
-	case 7:
-		AverageTimeOfJob(ST_NewAddJobsProcess);
-		return(ST_NewAddJobsProcess);
-
-
-	case 8:
+	case 0:
 		exit(0);
-
 
 	default:
 		system("CLS");
 		printf("\t\t\t\t\tInvalid Operation insert a new one!\n\n\n");
 		break;
 	}
+
 }

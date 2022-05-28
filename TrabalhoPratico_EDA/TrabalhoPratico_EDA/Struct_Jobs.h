@@ -14,48 +14,34 @@
 #include <stdbool.h>
 
 
-//Dinamic List
+//Dinamic List of Jobs
 typedef struct Jobs {
 
 	char CH_NameofJob[50];
-	char CH_NameofProcess[50];
-	unsigned int IN_NumberofMachine;
-	unsigned int IN_TimeToProcess;
-	struct Jobs* P_ST_Next;
+	struct Operation *P_ST_Operation;
+	struct Jobs *P_ST_Next;
 
 }ST_Jobs;
 
-
-
-/*//Part 2
-
-typedef struct Jobs {
-
-	char CH_NameofJob[50];
-	struct Operation P_ST_Operation;
-	struct Jobs* P_ST_Next;
-
-}ST_Jobs;
-
-
+//Dinamic List of Operations
 typedef struct Operation {
 
 	char CH_NameofOperation[50];
-	struct Machines* P_ST_Machines;
-	struct Operation* P_ST_Next;
+	struct Machines *P_ST_Machines;
+	struct Operation *P_ST_Next;
+
+}ST_Operation;
 
 
-}ST_Operation;*/
-
-
-/*typedef struct Machines {
+//Dinamic List of Machines
+typedef struct Machines {
 
 	unsigned int IN_NumberofMachine;
 	unsigned int IN_TimeToProcess;
-	struct Machines* P_ST_Next;
+	struct Machines *P_ST_Next;
 
 
-}ST_Operation; */
+}ST_Machines;
 
 
 

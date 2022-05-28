@@ -13,6 +13,18 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Jobs">
+      <UniqueIdentifier>{99bd3473-6c19-42c8-9663-2d139ed02d45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Operation">
+      <UniqueIdentifier>{2202a714-5bbe-4c43-a51d-1406115563be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Machines">
+      <UniqueIdentifier>{f85ed859-b97f-463c-be99-24aca3b64573}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Main">
+      <UniqueIdentifier>{d0ca4aac-1f2c-40b1-bfef-60991c7e91a0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.c">
@@ -47,6 +59,18 @@
     </ClCompile>
     <ClCompile Include="OptionFromUser.c">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JobsMenu.c">
+      <Filter>Source Files\Jobs</Filter>
+    </ClCompile>
+    <ClCompile Include="OperationMenu.c">
+      <Filter>Source Files\Operation</Filter>
+    </ClCompile>
+    <ClCompile Include="MachinesMenu.c">
+      <Filter>Source Files\Machines</Filter>
+    </ClCompile>
+    <ClCompile Include="MainJobs.c">
+      <Filter>Source Files\Jobs</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

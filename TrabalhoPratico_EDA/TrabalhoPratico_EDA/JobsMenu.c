@@ -1,7 +1,7 @@
 #include "Functions.h"
 
 //Function to Draw the Menu in CMD and Center in text in the middle of CMD
-ST_Jobs* WriteCenterTextMenu()
+void WriteJobMenuInCenter()
 {
 
 	//Get Size in X of CMD
@@ -16,66 +16,75 @@ ST_Jobs* WriteCenterTextMenu()
 
 	//Strings of Menu
 	char* STR_ConstStringToDraw;
-	const char* STR_Menu = "**********************************************MENU**********************************************";
-	const char* STR_Job = "1-JOBS";
-	const char* STR_Operation = "2-OPERATION";
-	const char* STR_Machine = "3-MACHINES";
-	const char* STR_Exit = "0-Exit: ";
-	const char* STR_OperationRes = "OPERATION: ";
+
+	system("CLS");
+	//Menu Jobs
+	const char* STR_MenuJobs = "***********************Jobs***********************";
+	const char* STR_INJ = "1-Insertion of a New Job";
+	const char* STR_RPJ = "2-Remove a particular Job";
+	const char* STR_CPJ = "3-Change a particular Job";
+	const char* STR_SAJ = "4-Show all Jobs";
+	const char* STR_JBack = "5-Back";
+	const char* STR_OperationRes = "OPERATION:";
 	const char* STR_ErrorHandle = "SOMETHING GOES WRONG WITH THE ITERATOR";
-
-
 
 	do
 	{
 		switch (IN_Iterator)
 		{
 		case 1:
-			STR_ConstStringToDraw = STR_Menu;
-			IN_StringLengh = strlen(STR_Menu);
+			STR_ConstStringToDraw = STR_MenuJobs;
+			IN_StringLengh = strlen(STR_MenuJobs);
 			IN_Fill_Width = (CI_GetXOfCMD - IN_StringLengh) / 2 + IN_StringLengh;
 			printf("%*s\n", IN_Fill_Width, STR_ConstStringToDraw);
 			IN_Iterator++;
 			break;
 
 		case 2:
-			STR_ConstStringToDraw = STR_Job;
-			IN_StringLengh = strlen(STR_Job);
+			STR_ConstStringToDraw = STR_INJ;
+			IN_StringLengh = strlen(STR_INJ);
 			IN_Fill_Width = (CI_GetXOfCMD - IN_StringLengh) / 2 + IN_StringLengh;
 			printf("%*s\n", IN_Fill_Width, STR_ConstStringToDraw);
 			IN_Iterator++;
 			break;
 
 		case 3:
-			STR_ConstStringToDraw = STR_Operation;
-			IN_StringLengh = strlen(STR_Operation);
+			STR_ConstStringToDraw = STR_RPJ;
+			IN_StringLengh = strlen(STR_RPJ);
 			IN_Fill_Width = (CI_GetXOfCMD - IN_StringLengh) / 2 + IN_StringLengh;
 			printf("%*s\n", IN_Fill_Width, STR_ConstStringToDraw);
 			IN_Iterator++;
 			break;
 
 		case 4:
-			STR_ConstStringToDraw = STR_Machine;
-			IN_StringLengh = strlen(STR_Machine);
+			STR_ConstStringToDraw = STR_CPJ;
+			IN_StringLengh = strlen(STR_CPJ);
 			IN_Fill_Width = (CI_GetXOfCMD - IN_StringLengh) / 2 + IN_StringLengh;
 			printf("%*s\n", IN_Fill_Width, STR_ConstStringToDraw);
 			IN_Iterator++;
 			break;
 
-
 		case 5:
-			STR_ConstStringToDraw = STR_Exit;
-			IN_StringLengh = strlen(STR_Exit);
+			STR_ConstStringToDraw = STR_SAJ;
+			IN_StringLengh = strlen(STR_SAJ);
 			IN_Fill_Width = (CI_GetXOfCMD - IN_StringLengh) / 2 + IN_StringLengh;
 			printf("%*s\n", IN_Fill_Width, STR_ConstStringToDraw);
 			IN_Iterator++;
 			break;
 
 		case 6:
+			STR_ConstStringToDraw = STR_JBack;
+			IN_StringLengh = strlen(STR_JBack);
+			IN_Fill_Width = (CI_GetXOfCMD - IN_StringLengh) / 2 + IN_StringLengh;
+			printf("%*s\n", IN_Fill_Width, STR_ConstStringToDraw);
+			IN_Iterator++;
+			break;
+
+		case 7:
 			STR_ConstStringToDraw = STR_OperationRes;
 			IN_StringLengh = strlen(STR_OperationRes);
 			IN_Fill_Width = (CI_GetXOfCMD - IN_StringLengh) / 2 + IN_StringLengh;
-			printf("%*s", IN_Fill_Width, STR_ConstStringToDraw);
+			printf("%*s ", IN_Fill_Width, STR_ConstStringToDraw);
 			IN_Iterator++;
 			break;
 
@@ -91,20 +100,9 @@ ST_Jobs* WriteCenterTextMenu()
 		}
 
 
-	} while (IN_Iterator <= 6);
+	} while (IN_Iterator <= 7);
+
+
 }
 
-
-//Function to get the size in X of CMD 
-//This is for Center Text in CMD, because C dont have a function to center a String
-int GetColumnWidth()
-{
-	CONSOLE_SCREEN_BUFFER_INFO ScreenInfo;
-	HANDLE OutPut;
-
-	if (!(OutPut = GetStdHandle(STD_OUTPUT_HANDLE)) ||
-		!GetConsoleScreenBufferInfo(OutPut, &ScreenInfo))
-		return 80;
-	return ScreenInfo.dwSize.X;
-}
 

@@ -1,7 +1,76 @@
-﻿  AverageTimeOfJob.c
-  MaximalTimeOfJob.c
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\MaximalTimeOfJob.c(23,28): warning C4018: '<': signed/unsigned mismatch
-  MinimalTimeOfJob.c
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\MinimalTimeOfJob.c(22,28): warning C4018: '>': signed/unsigned mismatch
+﻿  Interface.c
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Interface.c(34,36): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Interface.c(35,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Interface.c(42,35): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Interface.c(43,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Interface.c(50,41): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Interface.c(51,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Interface.c(58,39): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Interface.c(59,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Interface.c(67,36): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Interface.c(68,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Interface.c(75,44): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Interface.c(76,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Interface.c(84,43): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Interface.c(85,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  MainJobs.c
+  OperationMenu.c
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\OperationMenu.c(38,47): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\OperationMenu.c(39,28): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\OperationMenu.c(46,36): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\OperationMenu.c(47,28): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\OperationMenu.c(54,36): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\OperationMenu.c(55,28): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\OperationMenu.c(62,36): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\OperationMenu.c(63,28): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\OperationMenu.c(70,36): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\OperationMenu.c(71,28): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\OperationMenu.c(78,38): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\OperationMenu.c(79,28): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\OperationMenu.c(86,45): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\OperationMenu.c(87,28): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\OperationMenu.c(95,44): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\OperationMenu.c(96,28): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  MachinesMenu.c
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\MachinesMenu.c(40,41): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\MachinesMenu.c(41,28): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\MachinesMenu.c(48,36): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\MachinesMenu.c(49,28): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\MachinesMenu.c(56,36): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\MachinesMenu.c(57,28): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\MachinesMenu.c(64,36): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\MachinesMenu.c(65,28): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\MachinesMenu.c(72,36): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\MachinesMenu.c(73,28): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\MachinesMenu.c(80,38): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\MachinesMenu.c(81,28): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\MachinesMenu.c(88,45): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\MachinesMenu.c(89,28): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\MachinesMenu.c(97,44): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\MachinesMenu.c(98,28): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  JobsMenu.c
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\JobsMenu.c(36,40): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\JobsMenu.c(37,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\JobsMenu.c(44,35): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\JobsMenu.c(45,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\JobsMenu.c(52,35): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\JobsMenu.c(53,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\JobsMenu.c(60,35): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\JobsMenu.c(61,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\JobsMenu.c(68,35): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\JobsMenu.c(69,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\JobsMenu.c(76,37): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\JobsMenu.c(77,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\JobsMenu.c(84,44): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\JobsMenu.c(85,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\JobsMenu.c(93,43): warning C4090: '=': different 'const' qualifiers
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\JobsMenu.c(94,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  OptionFromUser.c
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\OptionFromUser.c(9,27): warning C4047: 'return': 'int' differs in levels of indirection from 'int *'
+  Main.c
   Generating Code...
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\OptionFromUser.c(46): warning C4715: 'VerifyOptionFromUser': not all control paths return a value
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\MachinesMenu.c(115): warning C4716: 'WriteMachinesMenuInCenter': must return a value
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\OperationMenu.c(113): warning C4716: 'WriteOperationMenuInCenter': must return a value
+D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\Interface.c(95): warning C4716: 'WriteCenterTextMenu': must return a value
   TrabalhoPratico_EDA.vcxproj -> D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\x64\Debug\TrabalhoPratico_EDA.exe
