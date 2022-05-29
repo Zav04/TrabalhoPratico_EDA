@@ -3,7 +3,6 @@
 //Function to Draw the Menu in CMD and Center in text in the middle of CMD
 ST_Jobs* WriteMachinesMenuInCenter(int IN_TypeOfMenu)
 {
-
 	//Get Size in X of CMD
 	const int CI_GetXOfCMD = GetColumnWidth();
 	//Iterator Value to increment to Write a Text in CMD
@@ -26,8 +25,6 @@ ST_Jobs* WriteMachinesMenuInCenter(int IN_TypeOfMenu)
 	const char* STR_SAM = "4-Show all Machines";
 	const char* STR_MBack = "5-Back";
 	const char* STR_OperationRes = "OPERATION: ";
-	const char* STR_ErrorHandle = "SOMETHING GOES WRONG WITH THE ITERATOR";
-
 
 	switch (IN_TypeOfMenu)
 	{
@@ -92,15 +89,7 @@ ST_Jobs* WriteMachinesMenuInCenter(int IN_TypeOfMenu)
 				IN_Iterator++;
 				break;
 
-			default:
-				system("CLS");
-				STR_ConstStringToDraw = STR_ErrorHandle;
-				IN_StringLengh = strlen(STR_ErrorHandle);
-				IN_Fill_Width = (CI_GetXOfCMD - IN_StringLengh) / 2 + IN_StringLengh;
-				printf("%*s\n", IN_Fill_Width, STR_ConstStringToDraw);
-				IN_Iterator = 1;
-				Menu();
-				break;
+
 			}
 
 

@@ -1,7 +1,7 @@
 #include "Functions.h"
 
 //Function to Draw the Menu in CMD and Center in text in the middle of CMD
-ST_Jobs* WriteCenterTextMenu()
+void WriteCenterTextMenu()
 {
 
 	//Get Size in X of CMD
@@ -15,6 +15,7 @@ ST_Jobs* WriteCenterTextMenu()
 
 
 	//Strings of Menu
+	system("CLS");
 	char* STR_ConstStringToDraw;
 	const char* STR_Menu = "**********************************************MENU**********************************************";
 	const char* STR_Job = "1-JOBS";
@@ -22,9 +23,6 @@ ST_Jobs* WriteCenterTextMenu()
 	const char* STR_Machine = "3-MACHINES";
 	const char* STR_Exit = "0-Exit: ";
 	const char* STR_OperationRes = "OPERATION: ";
-	const char* STR_ErrorHandle = "SOMETHING GOES WRONG WITH THE ITERATOR";
-
-
 
 	do
 	{
@@ -77,16 +75,6 @@ ST_Jobs* WriteCenterTextMenu()
 			IN_Fill_Width = (CI_GetXOfCMD - IN_StringLengh) / 2 + IN_StringLengh;
 			printf("%*s", IN_Fill_Width, STR_ConstStringToDraw);
 			IN_Iterator++;
-			break;
-
-		default:
-			system("CLS");
-			STR_ConstStringToDraw = STR_ErrorHandle;
-			IN_StringLengh = strlen(STR_ErrorHandle);
-			IN_Fill_Width = (CI_GetXOfCMD - IN_StringLengh) / 2 + IN_StringLengh;
-			printf("%*s\n", IN_Fill_Width, STR_ConstStringToDraw);
-			IN_Iterator = 1;
-			Menu();
 			break;
 		}
 

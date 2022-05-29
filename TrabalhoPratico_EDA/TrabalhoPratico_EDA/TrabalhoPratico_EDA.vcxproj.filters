@@ -69,7 +69,22 @@
     <ClCompile Include="MachinesMenu.c">
       <Filter>Source Files\Machines</Filter>
     </ClCompile>
-    <ClCompile Include="MainJobs.c">
+    <ClCompile Include="JobsMain.c">
+      <Filter>Source Files\Jobs</Filter>
+    </ClCompile>
+    <ClCompile Include="JobsOptionFromUser.c">
+      <Filter>Source Files\Jobs</Filter>
+    </ClCompile>
+    <ClCompile Include="JobsInsertNewJob.c">
+      <Filter>Source Files\Jobs</Filter>
+    </ClCompile>
+    <ClCompile Include="JobsShowJobs.c">
+      <Filter>Source Files\Jobs</Filter>
+    </ClCompile>
+    <ClCompile Include="JobsRemoveJob.c">
+      <Filter>Source Files\Jobs</Filter>
+    </ClCompile>
+    <ClCompile Include="JobsChangeParticularJob.c">
       <Filter>Source Files\Jobs</Filter>
     </ClCompile>
   </ItemGroup>

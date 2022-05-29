@@ -24,11 +24,6 @@ ST_Jobs* WriteOperationMenuInCenter()
 	const char* STR_SAO = "4-Show all Operation";
 	const char* STR_OBack = "5-Back";
 	const char* STR_OperationRes = "OPERATION: ";
-	const char* STR_ErrorHandle = "SOMETHING GOES WRONG WITH THE ITERATOR";
-
-
-	switch (IN_Iterator)
-	{
 
 		do
 		{
@@ -90,24 +85,8 @@ ST_Jobs* WriteOperationMenuInCenter()
 				IN_Iterator++;
 				break;
 
-			default:
-				system("CLS");
-				STR_ConstStringToDraw = STR_ErrorHandle;
-				IN_StringLengh = strlen(STR_ErrorHandle);
-				IN_Fill_Width = (CI_GetXOfCMD - IN_StringLengh) / 2 + IN_StringLengh;
-				printf("%*s\n", IN_Fill_Width, STR_ConstStringToDraw);
-				IN_Iterator = 1;
-				Menu();
-				break;
 			}
 
-
 		} while (IN_Iterator <= 7);
-
-	
-
-	default:
-		break;
-	}
 
 }

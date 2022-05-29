@@ -1,14 +1,14 @@
 #include "Struct_Jobs.h"
 
 /////////////////////////////////////////////////////////////////////////////////Functions Declarations/////////////////////////////////////////////////////////////////////////////////
-void Menu();
-ST_Jobs* WriteCenterTextMenu();
+void Menu(ST_Jobs* ST_AddJobsProcess, ST_Operation* ST_AddOperationProcess, ST_Machines* ST_AddMachineProcess);
+void WriteCenterTextMenu();
 int GetColumnWidth();
 int GetOptionFromUser(int *IN_OptionFromUser);
 void *InsertNewOperationToList(ST_Jobs *ST_AddJobsProcess, char IN_NameofProcess[99], int IN_MachineNumber, int IN_TimeofProcess);
 void WriteDataToFile(ST_Jobs *ST_WriteJobsProcess);
 ST_Jobs *ReadDataOfFile(ST_Jobs *ST_ReadJobsProcess);
-ST_Jobs *VerifyOptionFromUser(ST_Jobs *ST_AddJobsProcess,int *IN_OptionChoseByUser);
+ST_Jobs* VerifyOptionFromUser(ST_Jobs* ST_AddJobsProcess, ST_Operation* ST_AddOperationProcess, ST_Machines* ST_AddMachineProcess, int* IN_OptionChoseByUser);
 ST_Jobs *InsertNewOperation(ST_Jobs *ST_AddJobsProcess);
 ST_Jobs *RemoveParticularOperation(ST_Jobs *ST_RemoveProcess);
 ST_Jobs *ChangeParticularOperation(ST_Jobs *ST_ChangeJobsProcess);
@@ -18,9 +18,20 @@ void MaximalTimeOfJob(ST_Jobs* ST_MaximalTimeProces);
 void AverageTimeOfJob(ST_Jobs* ST_AverageTimeProces);
 
 
-//Jobs Menu
+///////////////////////////////////////////////////////////////////////////////// JOB FUNCTIONS ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 void WriteJobMenuInCenter();
-ST_Jobs* MainFromJobs();
+ST_Jobs* MainFromJobs(ST_Jobs* ST_AddJobToList, ST_Operation* ST_AddOperationToList, ST_Machines* ST_AddmachineToList);
+ST_Jobs* VerifyJobsOption(ST_Jobs* ST_AddJobToList, ST_Operation* ST_AddOperationToList, ST_Machines* ST_AddmachineToList, int* IN_OptionChoseByUser);
+ST_Jobs* InsertNewJobToList(ST_Jobs* ST_AddJobToList, ST_Operation* ST_AddOperationToList, ST_Machines* ST_AddmachineToList,char CH_NameofPJob[99], char CH_NameofOperation[99], int IN_MachineNumber, int IN_TimeofProcess);
+ST_Jobs* InsertNewJob(ST_Jobs* ST_AddJobToList, ST_Operation* ST_AddOperationToList, ST_Machines* ST_AddmachineToList);
+void ShowJob(ST_Jobs* ST_AddJobToList,BOOL B_Pause);
+ST_Jobs* RemoveParticularJob(ST_Jobs* ST_RemoveJobToList, ST_Operation* ST_RemoveOperationToList, ST_Machines* ST_RemoveMachineToList);
+ST_Jobs* ChangeJob(ST_Jobs* ST_ChangeJobToList);
+
+
+///////////////////////////////////////////////////////////////////////////////// JOB FUNCTIONS ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 
 
 //Operation Menu

@@ -19,7 +19,7 @@ void WriteJobMenuInCenter()
 
 	system("CLS");
 	//Menu Jobs
-	const char* STR_MenuJobs = "***********************Jobs***********************";
+	const char* STR_MenuJobs = "**********************************************JOBS**********************************************";
 	const char* STR_INJ = "1-Insertion of a New Job";
 	const char* STR_RPJ = "2-Remove a particular Job";
 	const char* STR_CPJ = "3-Change a particular Job";
@@ -86,16 +86,6 @@ void WriteJobMenuInCenter()
 			IN_Fill_Width = (CI_GetXOfCMD - IN_StringLengh) / 2 + IN_StringLengh;
 			printf("%*s ", IN_Fill_Width, STR_ConstStringToDraw);
 			IN_Iterator++;
-			break;
-
-		default:
-			system("CLS");
-			STR_ConstStringToDraw = STR_ErrorHandle;
-			IN_StringLengh = strlen(STR_ErrorHandle);
-			IN_Fill_Width = (CI_GetXOfCMD - IN_StringLengh) / 2 + IN_StringLengh;
-			printf("%*s\n", IN_Fill_Width, STR_ConstStringToDraw);
-			IN_Iterator = 1;
-			Menu();
 			break;
 		}
 

@@ -12,21 +12,22 @@ int GetOptionFromUser(int* IN_OptionFromUser)
 
 
 //Verify and Open the Choice by User
-ST_Jobs* VerifyOptionFromUser(ST_Jobs* ST_AddJobsProcess, int* IN_OptionChoseByUser)
+ST_Jobs* VerifyOptionFromUser(ST_Jobs* ST_AddJobsProcess , ST_Operation* ST_AddOperationProcess , ST_Machines* ST_AddMachineProcess, int* IN_OptionChoseByUser)
 {
-	ST_Jobs* ST_NewAddProcess = ST_AddJobsProcess;
+
+	ST_Jobs* ST_AuxNewAddProcess = ST_AddJobsProcess;
 
 	switch (*IN_OptionChoseByUser)
 	{
 
 	case 1:
-		ST_NewAddProcess=MainFromJobs(ST_AddJobsProcess);
+		ST_AuxNewAddProcess =MainFromJobs(ST_AddJobsProcess, ST_AddOperationProcess, ST_AddMachineProcess);
 
 	case 2:
-		ST_NewAddProcess=WriteOperationMenuInCenter(ST_AddJobsProcess);
+		//ST_AuxNewAddProcess = MainFromJobs(ST_AddJobsProcess);
 
 	case 3:
-		ST_NewAddProcess=WriteMachinesMenuInCenter(ST_AddJobsProcess);
+		//ST_AuxNewAddProcess = MainFromJobs(ST_AddJobsProcess);
 
 	case 0:
 		exit(0);
@@ -34,7 +35,11 @@ ST_Jobs* VerifyOptionFromUser(ST_Jobs* ST_AddJobsProcess, int* IN_OptionChoseByU
 	default:
 		system("CLS");
 		printf("\t\t\t\t\tInvalid Operation insert a new one!\n\n\n");
+		system("Pause");
+		IN_OptionChoseByUser = -1;
 		break;
 	}
+
+	return(ST_AuxNewAddProcess);
 
 }

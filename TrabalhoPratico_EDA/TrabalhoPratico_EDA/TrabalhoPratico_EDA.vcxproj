@@ -151,7 +151,12 @@
     <ClCompile Include="Interface.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="MainJobs.c" />
+    <ClCompile Include="JobsChangeParticularJob.c" />
+    <ClCompile Include="JobsInsertNewJob.c" />
+    <ClCompile Include="JobsOptionFromUser.c" />
+    <ClCompile Include="JobsMain.c" />
+    <ClCompile Include="JobsRemoveJob.c" />
+    <ClCompile Include="JobsShowJobs.c" />
     <ClCompile Include="OperationMenu.c" />
     <ClCompile Include="MachinesMenu.c" />
     <ClCompile Include="MaximalTimeOfJob.c">
