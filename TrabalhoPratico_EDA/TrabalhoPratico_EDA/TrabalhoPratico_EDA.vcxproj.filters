@@ -27,16 +27,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Interface.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="InsertNewOperation.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ShowAllOperation.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="RemoveParticularOperation.c">
@@ -57,9 +48,6 @@
     <ClCompile Include="ChangeParticularOperation.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="OptionFromUser.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="JobsMenu.c">
       <Filter>Source Files\Jobs</Filter>
     </ClCompile>
@@ -78,14 +66,38 @@
     <ClCompile Include="JobsInsertNewJob.c">
       <Filter>Source Files\Jobs</Filter>
     </ClCompile>
-    <ClCompile Include="JobsShowJobs.c">
-      <Filter>Source Files\Jobs</Filter>
-    </ClCompile>
     <ClCompile Include="JobsRemoveJob.c">
       <Filter>Source Files\Jobs</Filter>
     </ClCompile>
     <ClCompile Include="JobsChangeParticularJob.c">
       <Filter>Source Files\Jobs</Filter>
+    </ClCompile>
+    <ClCompile Include="OperationChangeParticularOperation.c">
+      <Filter>Source Files\Operation</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface.c">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.c">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="ShowAllOperation.c">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="OptionFromUser.c">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="OperationInsertNewOperation.c">
+      <Filter>Source Files\Operation</Filter>
+    </ClCompile>
+    <ClCompile Include="OperationMain.c">
+      <Filter>Source Files\Operation</Filter>
+    </ClCompile>
+    <ClCompile Include="OperationOptionFromUser.c">
+      <Filter>Source Files\Operation</Filter>
+    </ClCompile>
+    <ClCompile Include="OperationRemoveOperation.c">
+      <Filter>Source Files\Operation</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

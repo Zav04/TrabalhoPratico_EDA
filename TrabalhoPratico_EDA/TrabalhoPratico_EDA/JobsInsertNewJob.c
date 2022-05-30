@@ -26,6 +26,8 @@ ST_Jobs* InsertNewJob(ST_Jobs* ST_AddJobToList, ST_Operation* ST_AddOperationToL
 	printf("R:");
 	scanf("%d", &IN_TimeToProcess);
 
+	ST_Jobs* job, ST_Operation* operacao, char CH_NameofPJob, char nomedoOperation[], int nrmaquina, int tempo);
+
 	ST_AddJobToList = InsertNewJobToList(ST_AddJobToList, ST_AddOperationToList, ST_AddmachineToList, CH_NameOfJob, CH_NameOfOperation, IN_NumberofMachine, IN_TimeToProcess);
 
 	//WriteDataToFile(ST_AddJobsProcess);

@@ -1,7 +1,7 @@
 #include "Functions.h"
 
 
-ST_Jobs* ChangeJob(ST_Jobs* ST_ChangeJobToList)
+ST_Jobs* ChangeOperation(ST_Jobs* ST_ChangeJobToList)
 {
 	//Show all List to chose a Operation more easy
 	ShowAllProgram(ST_ChangeJobToList, FALSE);
@@ -30,7 +30,7 @@ ST_Jobs* ChangeJob(ST_Jobs* ST_ChangeJobToList)
 				scanf("%s", CH_NewNameofJob);
 
 
-				strcpy(ST_AuxChangeJobs->CH_NameofJob,CH_NewNameofJob);
+				strcpy(ST_AuxChangeJobs->CH_NameofJob, CH_NewNameofJob);
 
 				IN_NoOperationFouned = 1;
 				printf("\nOperation %s successfully changed!\n", CH_JobToChange);

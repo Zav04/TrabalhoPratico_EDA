@@ -12,10 +12,8 @@ ST_Jobs* WriteMachinesMenuInCenter(int IN_TypeOfMenu)
 	//Variable to get the lengh of String to calculate center of CMD
 	int IN_StringLengh = 0;
 
-
 	//Strings of Menu
 	char* STR_ConstStringToDraw;
-
 
 	//Menu Machines
 	const char* STR_Machines = "***********************Machines***********************";
@@ -28,7 +26,6 @@ ST_Jobs* WriteMachinesMenuInCenter(int IN_TypeOfMenu)
 
 	switch (IN_TypeOfMenu)
 	{
-
 		do
 		{
 			switch (IN_Iterator)
@@ -88,19 +85,8 @@ ST_Jobs* WriteMachinesMenuInCenter(int IN_TypeOfMenu)
 				printf("%*s\n", IN_Fill_Width, STR_ConstStringToDraw);
 				IN_Iterator++;
 				break;
-
-
 			}
 
-
 		} while (IN_Iterator <= 7);
-
-	default:
-		break;
 	}
-
-
-
 }
-
-

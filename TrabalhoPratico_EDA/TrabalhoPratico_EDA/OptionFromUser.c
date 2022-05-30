@@ -21,13 +21,18 @@ ST_Jobs* VerifyOptionFromUser(ST_Jobs* ST_AddJobsProcess , ST_Operation* ST_AddO
 	{
 
 	case 1:
-		ST_AuxNewAddProcess =MainFromJobs(ST_AddJobsProcess, ST_AddOperationProcess, ST_AddMachineProcess);
+		ST_AuxNewAddProcess = MainFromJobs(ST_AddJobsProcess, ST_AddOperationProcess, ST_AddMachineProcess);
+		break;
 
 	case 2:
-		//ST_AuxNewAddProcess = MainFromJobs(ST_AddJobsProcess);
+		ST_AuxNewAddProcess = MainFromOperation(ST_AddJobsProcess, ST_AddOperationProcess, ST_AddMachineProcess);
 
 	case 3:
 		//ST_AuxNewAddProcess = MainFromJobs(ST_AddJobsProcess);
+
+	case 4:
+		ShowAllProgram(ST_AddJobsProcess, TRUE);
+		break;
 
 	case 0:
 		exit(0);

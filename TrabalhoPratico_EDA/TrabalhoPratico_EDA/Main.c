@@ -1,8 +1,11 @@
 #include "Functions.h"
 
+
 int main() {
+
 	//Set language in English orthography
 	setlocale(LC_ALL, "English");
+
 
 	//Create the starting structs
 	ST_Jobs* ST_AddJobsProcess = NULL;
@@ -39,6 +42,7 @@ void Menu(ST_Jobs* ST_AddJobsProcess, ST_Operation* ST_AddOperationProcess, ST_M
 	//Infinit Loop to MENU
 	do
 	{
+
 		int IN_OptionFromUser = -1;
 		//Write Menu in the center of CMD
 		WriteCenterTextMenu();
@@ -46,6 +50,7 @@ void Menu(ST_Jobs* ST_AddJobsProcess, ST_Operation* ST_AddOperationProcess, ST_M
 		GetOptionFromUser(&IN_OptionFromUser);
 		//Verify and Open the Choice by User
 		ST_AddJobsProcess=VerifyOptionFromUser(ST_AddJobsProcess, ST_AddOperationProcess, ST_AddMachineProcess,&IN_OptionFromUser);
+
 
 	} while (true);
 

@@ -1,9 +1,9 @@
 #include "Functions.h"
 
-ST_Jobs* RemoveParticularJob(ST_Jobs* ST_RemoveJobToList, ST_Operation* ST_RemoveOperationToList, ST_Machines* ST_RemoveMachineToList)
+ST_Jobs* RemoveParticularOperation(ST_Jobs* ST_RemoveJobToList, ST_Operation* ST_RemoveOperationToList, ST_Machines* ST_RemoveMachineToList)
 {
 
-	ShowAllProgram(ST_RemoveJobToList, ST_RemoveOperationToList, ST_RemoveMachineToList,FALSE);
+	ShowAllProgram(ST_RemoveJobToList, FALSE);
 	ST_Jobs* ST_AtualNode = ST_RemoveJobToList, * ST_BeforeNode;
 	int IN_NoOperationFouned = 0;
 	char CH_OperationToRemove[50];

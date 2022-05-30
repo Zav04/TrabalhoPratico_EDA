@@ -1,6 +1,6 @@
 #include "Functions.h"
 
-ST_Jobs* WriteOperationMenuInCenter()
+void WriteOperationMenuInCenter()
 {
 
 	//Get Size in X of CMD
@@ -17,7 +17,8 @@ ST_Jobs* WriteOperationMenuInCenter()
 	char* STR_ConstStringToDraw;
 
 	//Menu Operations
-	const char* STR_MenuOperations = "***********************Operations***********************";
+	system("CLS");
+	const char* STR_MenuOperations = "**********************************************OPERATION**********************************************";
 	const char* STR_INO = "1-Insertion of a New Operation";
 	const char* STR_RPO = "2-Remove a particular Operation";
 	const char* STR_CPO = "3-Change a particular Operation";
