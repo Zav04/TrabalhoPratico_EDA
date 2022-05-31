@@ -1,10 +1,10 @@
 #include "Functions.h"
 
-ST_Jobs* RemoveParticularOperation(ST_Jobs* ST_RemoveJobToList, ST_Operation* ST_RemoveOperationToList, ST_Machines* ST_RemoveMachineToList)
+ST_Operation* RemoveParticularOperation(ST_Operation* ST_RemoveJobToList)
 {
 
-	ShowAllProgram(ST_RemoveJobToList, FALSE);
-	ST_Jobs* ST_AtualNode = ST_RemoveJobToList, * ST_BeforeNode;
+	ShowOperations(ST_RemoveJobToList, FALSE);
+	ST_Operation* ST_AtualNode = ST_RemoveJobToList, * ST_BeforeNode;
 	int IN_NoOperationFouned = 0;
 	char CH_OperationToRemove[50];
 
@@ -16,7 +16,7 @@ ST_Jobs* RemoveParticularOperation(ST_Jobs* ST_RemoveJobToList, ST_Operation* ST
 		scanf("%s", &CH_OperationToRemove);
 
 
-		if (strcmp(ST_AtualNode->CH_NameofJob, CH_OperationToRemove) == 0)
+		if (strcmp(ST_AtualNode->CH_NameofOperation, CH_OperationToRemove) == 0)
 		{
 			ST_RemoveJobToList = ST_AtualNode->P_ST_Next;
 			free(ST_AtualNode);
@@ -30,7 +30,7 @@ ST_Jobs* RemoveParticularOperation(ST_Jobs* ST_RemoveJobToList, ST_Operation* ST
 		else
 		{
 			ST_BeforeNode = ST_RemoveJobToList;
-			while ((ST_AtualNode != NULL) && (strcmp(ST_AtualNode->CH_NameofJob, CH_OperationToRemove) != 0))
+			while ((ST_AtualNode != NULL) && (strcmp(ST_AtualNode->CH_NameofOperation, CH_OperationToRemove) != 0))
 			{
 				ST_BeforeNode = ST_AtualNode;
 				ST_AtualNode = ST_AtualNode->P_ST_Next;
@@ -38,6 +38,13 @@ ST_Jobs* RemoveParticularOperation(ST_Jobs* ST_RemoveJobToList, ST_Operation* ST
 			if (ST_AtualNode != NULL)
 			{
 				ST_BeforeNode->P_ST_Next = ST_AtualNode->P_ST_Next;
+				
+
+
+				///ELIMINAR MAQUINAS TAMBEM SENÃO FUDEU
+
+
+
 				free(ST_AtualNode);
 				//free(ST_AtualNode->P_ST_Operation->P_ST_Machines);
 				//free(ST_AtualNode->P_ST_Operation);

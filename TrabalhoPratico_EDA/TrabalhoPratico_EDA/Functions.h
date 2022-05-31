@@ -8,7 +8,7 @@ int GetOptionFromUser(int *IN_OptionFromUser);
 //void *InsertNewOperationToList(ST_Jobs *ST_AddJobsProcess, char IN_NameofProcess[99], int IN_MachineNumber, int IN_TimeofProcess);
 //void WriteDataToFile(ST_Jobs *ST_WriteJobsProcess);
 //ST_Jobs *ReadDataOfFile(ST_Jobs *ST_ReadJobsProcess);
-ST_Jobs* VerifyOptionFromUser(ST_Jobs* ST_AddJobsProcess, ST_Operation* ST_AddOperationProcess, ST_Machines* ST_AddMachineProcess, int* IN_OptionChoseByUser);
+void VerifyOptionFromUser(ST_Jobs* ST_AddJobsProcess, ST_Operation* ST_AddOperationProcess, ST_Machines* ST_AddMachineProcess, int* IN_OptionChoseByUser);
 //ST_Jobs *InsertNewOperation(ST_Jobs *ST_AddJobsProcess);
 //ST_Jobs *RemoveParticularOperation(ST_Jobs *ST_RemoveProcess);
 //ST_Jobs *ChangeParticularOperation(ST_Jobs *ST_ChangeJobsProcess);
@@ -22,21 +22,49 @@ void ShowAllProgram(ST_Jobs *ST_ShowReadProcess,BOOL B_Pause);
 void WriteJobMenuInCenter();
 ST_Jobs* MainFromJobs(ST_Jobs* ST_AddJobToList, ST_Operation* ST_AddOperationToList, ST_Machines* ST_AddmachineToList);
 ST_Jobs* VerifyJobsOption(ST_Jobs* ST_AddJobToList, ST_Operation* ST_AddOperationToList, ST_Machines* ST_AddmachineToList, int* IN_OptionChoseByUser);
-ST_Jobs* InsertNewJobToList(ST_Jobs* ST_AddJobToList, ST_Operation* ST_AddOperationToList, ST_Machines* ST_AddmachineToList,char CH_NameofPJob[99], char CH_NameofOperation[99], int IN_MachineNumber, int IN_TimeofProcess);
-ST_Jobs* InsertNewJob(ST_Jobs* ST_AddJobToList, ST_Operation* ST_AddOperationToList, ST_Machines* ST_AddmachineToList);
-ST_Jobs* RemoveParticularJob(ST_Jobs* ST_RemoveJobToList, ST_Operation* ST_RemoveOperationToList, ST_Machines* ST_RemoveMachineToList);
+ST_Jobs* InsertNewJobToList(ST_Jobs* ST_AddJobToList,char CH_NameofPJob[99]);
+ST_Jobs* InsertNewJob(ST_Jobs* ST_AddJobToList);
+ST_Jobs* RemoveParticularJob(ST_Jobs* ST_RemoveJobToList);
 ST_Jobs* ChangeJob(ST_Jobs* ST_ChangeJobToList);
+void ShowJobs(ST_Jobs* ST_ShowJobToList, BOOL B_Pause);
 ///////////////////////////////////////////////////////////////////////////////// JOB FUNCTIONS ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 
 ///////////////////////////////////////////////////////////////////////////////// OPERATION FUNCTIONS ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 void WriteOperationMenuInCenter();
-ST_Jobs* MainFromOperation(ST_Jobs* ST_AddJobToList, ST_Operation* ST_AddOperationToList, ST_Machines* ST_AddmachineToList);
-ST_Jobs* VerifyOperationOption(ST_Jobs* ST_AddJobToList, ST_Operation* ST_AddOperationToList, ST_Machines* ST_AddmachineToList, int* IN_OptionChoseByUser);
-ST_Operation* InsertNewOperationToList(ST_Jobs* ST_AddJobToList, ST_Operation* ST_AddOperationToList, ST_Machines* ST_AddmachineToList, char CH_NameofPJob[99], char CH_NameofOperation[99], int IN_MachineNumber, int IN_TimeofProcess);
-ST_Jobs* InsertNewOperation(ST_Jobs* ST_AddJobToList, ST_Operation* ST_AddOperationToList, ST_Machines* ST_AddmachineToList);
-ST_Jobs* RemoveParticularOperation(ST_Jobs* ST_RemoveJobToList, ST_Operation* ST_RemoveOperationToList, ST_Machines* ST_RemoveMachineToList);
-ST_Jobs* ChangeOperation(ST_Jobs* ST_ChangeJobToList);
+ST_Operation* MainFromOperation(ST_Jobs* ST_AddJobToList, ST_Operation* ST_AddOperationToList, ST_Machines* ST_AddmachineToList);
+ST_Operation* VerifyOperationOption(ST_Jobs* ST_AddJobToList, ST_Operation* ST_AddOperationToList, ST_Machines* ST_AddmachineToList, int* IN_OptionChoseByUser);
+ST_Operation* InsertNewOperationToList(ST_Operation* ST_AddOperationToList,char CH_NameofOperation[99]);
+ST_Operation* InsertNewOperation(ST_Operation* ST_AddOperationToList);
+ST_Operation* RemoveParticularOperation(ST_Operation* ST_RemoveOperationToList);
+ST_Operation* ChangeOperation(ST_Operation* ST_ChangeJobToList);
+void ShowOperations(ST_Operation* ST_ShowJobToList, BOOL B_Pause);
 ///////////////////////////////////////////////////////////////////////////////// OPERATION FUNCTIONS ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////// MACHINE FUNCTIONS ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+void WriteMachineMenuInCenter();
+ST_Machines* MainFromMachines(ST_Jobs* ST_AddJobToList, ST_Operation* ST_AddOperationToList, ST_Machines* ST_AddmachineToList);
+ST_Machines* VerifyMachineOption(ST_Jobs* ST_AddJobToList, ST_Operation* ST_AddOperationToList, ST_Machines* ST_AddmachineToList, int* IN_OptionChoseByUser);
+ST_Machines* InsertNewMachineToList(ST_Machines* ST_AddMachineToList, int IN_NumberOfMachine, int IN_TimeOfMachine);
+ST_Machines* InsertNewMachine(ST_Machines* ST_AddmachineToList);
+ST_Machines* RemoveParticularMachine(ST_Machines* ST_AddmachineToList);
+ST_Machines* ChangeMachine(ST_Machines* ST_AddmachineToList);
+void ShowMachines(ST_Machines* ST_AddmachineToList, BOOL B_Pause);
+///////////////////////////////////////////////////////////////////////////////// MACHINE FUNCTIONS ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////////// CONNECTIONS FUNCTIONS ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ST_Operation* ConnectMachineToOperation(ST_Operation* ST_OperationToAloc, ST_Machines* ST_MachinetoAloc, char CH_NameOsadsadasfOperation[99], int NumberOfMachine);
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////// CONNECTIONS FUNCTIONS ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 
 //Machines Menu

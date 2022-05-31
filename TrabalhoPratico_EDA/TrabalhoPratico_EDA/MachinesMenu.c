@@ -1,7 +1,7 @@
 #include "Functions.h"
 
 //Function to Draw the Menu in CMD and Center in text in the middle of CMD
-ST_Jobs* WriteMachinesMenuInCenter(int IN_TypeOfMenu)
+void WriteMachineMenuInCenter()
 {
 	//Get Size in X of CMD
 	const int CI_GetXOfCMD = GetColumnWidth();
@@ -15,6 +15,7 @@ ST_Jobs* WriteMachinesMenuInCenter(int IN_TypeOfMenu)
 	//Strings of Menu
 	char* STR_ConstStringToDraw;
 
+	system("CLS");
 	//Menu Machines
 	const char* STR_Machines = "***********************Machines***********************";
 	const char* STR_INM = "1-Insertion of a New Machines";
@@ -24,8 +25,6 @@ ST_Jobs* WriteMachinesMenuInCenter(int IN_TypeOfMenu)
 	const char* STR_MBack = "5-Back";
 	const char* STR_OperationRes = "OPERATION: ";
 
-	switch (IN_TypeOfMenu)
-	{
 		do
 		{
 			switch (IN_Iterator)
@@ -88,5 +87,4 @@ ST_Jobs* WriteMachinesMenuInCenter(int IN_TypeOfMenu)
 			}
 
 		} while (IN_Iterator <= 7);
-	}
 }

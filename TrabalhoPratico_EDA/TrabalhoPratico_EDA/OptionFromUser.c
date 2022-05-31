@@ -12,23 +12,23 @@ int GetOptionFromUser(int* IN_OptionFromUser)
 
 
 //Verify and Open the Choice by User
-ST_Jobs* VerifyOptionFromUser(ST_Jobs* ST_AddJobsProcess , ST_Operation* ST_AddOperationProcess , ST_Machines* ST_AddMachineProcess, int* IN_OptionChoseByUser)
+void VerifyOptionFromUser(ST_Jobs* ST_AddJobsProcess , ST_Operation* ST_AddOperationProcess , ST_Machines* ST_AddMachineProcess, int* IN_OptionChoseByUser)
 {
-
-	ST_Jobs* ST_AuxNewAddProcess = ST_AddJobsProcess;
 
 	switch (*IN_OptionChoseByUser)
 	{
 
 	case 1:
-		ST_AuxNewAddProcess = MainFromJobs(ST_AddJobsProcess, ST_AddOperationProcess, ST_AddMachineProcess);
+		ST_AddJobsProcess = MainFromJobs(ST_AddJobsProcess, ST_AddOperationProcess, ST_AddMachineProcess);
 		break;
 
 	case 2:
-		ST_AuxNewAddProcess = MainFromOperation(ST_AddJobsProcess, ST_AddOperationProcess, ST_AddMachineProcess);
+		ST_AddOperationProcess = MainFromOperation(ST_AddJobsProcess, ST_AddOperationProcess, ST_AddMachineProcess);
+		break;
 
 	case 3:
-		//ST_AuxNewAddProcess = MainFromJobs(ST_AddJobsProcess);
+		ST_AddMachineProcess = MainFromMachines(ST_AddJobsProcess, ST_AddOperationProcess, ST_AddMachineProcess);
+		break;
 
 	case 4:
 		ShowAllProgram(ST_AddJobsProcess, TRUE);
@@ -44,7 +44,5 @@ ST_Jobs* VerifyOptionFromUser(ST_Jobs* ST_AddJobsProcess , ST_Operation* ST_AddO
 		IN_OptionChoseByUser = -1;
 		break;
 	}
-
-	return(ST_AuxNewAddProcess);
 
 }

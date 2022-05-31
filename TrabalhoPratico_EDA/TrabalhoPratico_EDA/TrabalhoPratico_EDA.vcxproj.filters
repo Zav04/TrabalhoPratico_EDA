@@ -25,6 +25,9 @@
     <Filter Include="Source Files\Main">
       <UniqueIdentifier>{d0ca4aac-1f2c-40b1-bfef-60991c7e91a0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Connections">
+      <UniqueIdentifier>{a01cb1e4-2bf4-4c63-900c-090a688c4813}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="InsertNewOperation.c">
@@ -98,6 +101,36 @@
     </ClCompile>
     <ClCompile Include="OperationRemoveOperation.c">
       <Filter>Source Files\Operation</Filter>
+    </ClCompile>
+    <ClCompile Include="OperationShowOperations.c">
+      <Filter>Source Files\Operation</Filter>
+    </ClCompile>
+    <ClCompile Include="JobsShowJobs.c">
+      <Filter>Source Files\Jobs</Filter>
+    </ClCompile>
+    <ClCompile Include="MachineChangeParticularMachine.c">
+      <Filter>Source Files\Machines</Filter>
+    </ClCompile>
+    <ClCompile Include="MachineInsertNewMachine.c">
+      <Filter>Source Files\Machines</Filter>
+    </ClCompile>
+    <ClCompile Include="MachineMain.c">
+      <Filter>Source Files\Machines</Filter>
+    </ClCompile>
+    <ClCompile Include="MachineOptionFromUser.c">
+      <Filter>Source Files\Machines</Filter>
+    </ClCompile>
+    <ClCompile Include="MachineRemoveMachine.c">
+      <Filter>Source Files\Machines</Filter>
+    </ClCompile>
+    <ClCompile Include="MachineShowMachine.c">
+      <Filter>Source Files\Machines</Filter>
+    </ClCompile>
+    <ClCompile Include="MachineToOperation.c">
+      <Filter>Source Files\Connections</Filter>
+    </ClCompile>
+    <ClCompile Include="OperationToJob.c">
+      <Filter>Source Files\Connections</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

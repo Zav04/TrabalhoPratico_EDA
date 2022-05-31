@@ -1,11 +1,11 @@
 #include "Functions.h"
 
 
-ST_Jobs* ChangeOperation(ST_Jobs* ST_ChangeJobToList)
+ST_Operation* ChangeOperation(ST_Operation* ST_ChangeJobToList)
 {
 	//Show all List to chose a Operation more easy
-	ShowAllProgram(ST_ChangeJobToList, FALSE);
-	ST_Jobs* ST_AuxChangeJobs = ST_ChangeJobToList;
+	ShowOperations(ST_ChangeJobToList, FALSE);
+	ST_Operation* ST_AuxChangeJobs = ST_ChangeJobToList;
 	int IN_NoOperationFouned = 0;
 	int IN_DataChange;
 	char CH_JobToChange[50];
@@ -15,22 +15,22 @@ ST_Jobs* ChangeOperation(ST_Jobs* ST_ChangeJobToList)
 	if (ST_AuxChangeJobs != NULL)
 	{
 		printf("_____________________________________________________________________________\n");
-		printf("\nWhat's the name of the Job you want to change?\n");
+		printf("\nWhat's the name of the Operation you want to change?\n");
 		printf("R: ");
 		scanf("%s", &CH_JobToChange);
 
 
 		while (ST_AuxChangeJobs != NULL)
 		{
-			if (strcmp(ST_AuxChangeJobs->CH_NameofJob, CH_JobToChange) == 0)
+			if (strcmp(ST_AuxChangeJobs->CH_NameofOperation, CH_JobToChange) == 0)
 			{
 				printf("_____________________________________________________________________________\n");
-				printf("\nWhat's the new name of Job ?\n");
+				printf("\nWhat's the new name of Operation ?\n");
 				printf("R: ");
 				scanf("%s", CH_NewNameofJob);
 
 
-				strcpy(ST_AuxChangeJobs->CH_NameofJob, CH_NewNameofJob);
+				strcpy(ST_AuxChangeJobs->CH_NameofOperation, CH_NewNameofJob);
 
 				IN_NoOperationFouned = 1;
 				printf("\nOperation %s successfully changed!\n", CH_JobToChange);

@@ -4,7 +4,7 @@
 ST_Jobs* ChangeJob(ST_Jobs* ST_ChangeJobToList)
 {
 	//Show all List to chose a Operation more easy
-	ShowAllProgram(ST_ChangeJobToList, FALSE);
+	ShowJobs(ST_ChangeJobToList, FALSE);
 	ST_Jobs* ST_AuxChangeJobs = ST_ChangeJobToList;
 	int IN_NoOperationFouned = 0;
 	int IN_DataChange;
@@ -46,7 +46,7 @@ ST_Jobs* ChangeJob(ST_Jobs* ST_ChangeJobToList)
 	}
 	else
 	{
-		printf("NO OPERATIONS FOUNDED TO CHANGE\n");
+		printf("NO JOB FOUNDED TO CHANGE\n");
 		system("PAUSE");
 		system("CLS");
 		return ST_ChangeJobToList;
@@ -55,8 +55,8 @@ ST_Jobs* ChangeJob(ST_Jobs* ST_ChangeJobToList)
 	if (IN_NoOperationFouned == 0)
 	{
 
-		printf("\nOperation %s not found!\n", CH_JobToChange);
-		printf("Please insert or verify the correct name of operation\n");
+		printf("\Job %s not found!\n", CH_JobToChange);
+		printf("Please insert or verify the correct name of Job\n");
 		system("PAUSE");
 		system("CLS");
 

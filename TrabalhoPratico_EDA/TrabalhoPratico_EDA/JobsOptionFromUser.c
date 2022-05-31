@@ -10,11 +10,11 @@ ST_Jobs* VerifyJobsOption(ST_Jobs* ST_AddJobToList, ST_Operation* ST_AddOperatio
 	{
 
 	case 1:
-		ST_AuxNewAddProcess = InsertNewJob(ST_AddJobToList, ST_AddOperationToList, ST_AddmachineToList);
+		ST_AuxNewAddProcess = InsertNewJob(ST_AddJobToList);
 		break;
 
 	case 2:
-		ST_AuxNewAddProcess = RemoveParticularJob(ST_AddJobToList, ST_AddOperationToList,ST_AddmachineToList);
+		ST_AuxNewAddProcess = RemoveParticularJob(ST_AddJobToList);
 		break;
 
 	case 3:
@@ -22,7 +22,7 @@ ST_Jobs* VerifyJobsOption(ST_Jobs* ST_AddJobToList, ST_Operation* ST_AddOperatio
 		break;
 
 	case 4:
-		ShowAllProgram(ST_AddJobToList, TRUE);
+		ShowJobs(ST_AddJobToList, TRUE);
 		break;
 
 	case 5:

@@ -1,9 +1,9 @@
 #include "Functions.h"
 
-ST_Jobs* RemoveParticularJob(ST_Jobs* ST_RemoveJobToList, ST_Operation* ST_RemoveOperationToList, ST_Machines* ST_RemoveMachineToList)
+ST_Jobs* RemoveParticularJob(ST_Jobs* ST_RemoveJobToList)
 {
-
-	ShowAllProgram(ST_RemoveJobToList, ST_RemoveOperationToList, ST_RemoveMachineToList,FALSE);
+	//FAZER SHOW JOBS
+	ShowJobs(ST_RemoveJobToList,FALSE);
 	ST_Jobs* ST_AtualNode = ST_RemoveJobToList, * ST_BeforeNode;
 	int IN_NoOperationFouned = 0;
 	char CH_OperationToRemove[50];
@@ -11,7 +11,7 @@ ST_Jobs* RemoveParticularJob(ST_Jobs* ST_RemoveJobToList, ST_Operation* ST_Remov
 	if (ST_RemoveJobToList != NULL)
 	{
 		printf("_____________________________________________________________________________\n");
-		printf("\nWhat's the name of the Operation you want to remove?\n");
+		printf("\nWhat's the name of the Job you want to remove?\n");
 		printf("R: ");
 		scanf("%s", &CH_OperationToRemove);
 
@@ -23,7 +23,7 @@ ST_Jobs* RemoveParticularJob(ST_Jobs* ST_RemoveJobToList, ST_Operation* ST_Remov
 			//free(ST_AtualNode->P_ST_Operation->P_ST_Machines);
 			//free(ST_AtualNode->P_ST_Operation);
 			IN_NoOperationFouned = 1;
-			printf("\nOperation %s successfully removed!\n", CH_OperationToRemove);
+			printf("\Job %s successfully removed!\n", CH_OperationToRemove);
 			system("PAUSE");
 
 		}
@@ -39,10 +39,8 @@ ST_Jobs* RemoveParticularJob(ST_Jobs* ST_RemoveJobToList, ST_Operation* ST_Remov
 			{
 				ST_BeforeNode->P_ST_Next = ST_AtualNode->P_ST_Next;
 				free(ST_AtualNode);
-				//free(ST_AtualNode->P_ST_Operation->P_ST_Machines);
-				//free(ST_AtualNode->P_ST_Operation);
 				IN_NoOperationFouned = 1;
-				printf("\nOperation %s successfully removed!\n", CH_OperationToRemove);
+				printf("\Job %s successfully removed!\n", CH_OperationToRemove);
 				system("PAUSE");
 			}
 
@@ -51,7 +49,7 @@ ST_Jobs* RemoveParticularJob(ST_Jobs* ST_RemoveJobToList, ST_Operation* ST_Remov
 	else
 	{
 
-		printf("NO OPERATIONS FOUNDED TO REMOVE\n");
+		printf("NO Job FOUNDED TO REMOVE\n");
 		system("PAUSE");
 		system("CLS");
 		return ST_RemoveJobToList;
@@ -61,8 +59,8 @@ ST_Jobs* RemoveParticularJob(ST_Jobs* ST_RemoveJobToList, ST_Operation* ST_Remov
 	if (IN_NoOperationFouned == 0)
 	{
 
-		printf("\nOperation %s not found!\n", CH_OperationToRemove);
-		printf("Please insert or verify the correct name of operation\n", CH_OperationToRemove);
+		printf("\Job %s not found!\n", CH_OperationToRemove);
+		printf("Please insert or verify the correct name of Job\n", CH_OperationToRemove);
 		system("PAUSE");
 		system("CLS");
 
