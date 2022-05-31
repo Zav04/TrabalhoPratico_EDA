@@ -175,7 +175,9 @@
     <ClCompile Include="MachineShowMachine.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="MachineToOperation.c" />
+    <ClCompile Include="MachineToOperation.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="OperationChangeParticularOperation.c" />
     <ClCompile Include="OperationInsertNewOperation.c" />
     <ClCompile Include="OperationMain.c" />
@@ -193,7 +195,9 @@
     <ClCompile Include="OperationOptionFromUser.c" />
     <ClCompile Include="OperationRemoveOperation.c" />
     <ClCompile Include="OperationShowOperations.c" />
-    <ClCompile Include="OperationToJob.c" />
+    <ClCompile Include="OperationToJob.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="OptionFromUser.c" />
     <ClCompile Include="ReadAndWriteDataToFile.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>

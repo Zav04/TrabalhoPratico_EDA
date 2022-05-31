@@ -13,12 +13,12 @@ int main() {
 	ST_Machines* ST_AddMachinesProcess = NULL;
 
 
-	char Name[99] = "Job1";
-	char OP[99] = "OP1";
-	char Name_[99] = "Job2";
-	char OP_[99] = "OP2";
-	char Name_1[99] = "Job3";
-	char OP_1[99] = "OP3";
+	char Name[50] = "Job1";
+	char OP1[50] = "OP1";
+	char Name_[50] = "Job2";
+	char OP2[50] = "OP2";
+	char Name_1[50] = "Job3";
+	char OP3[50] = "OP3";
 	int m1 = 1;
 	int t1 = 10;
 	int m2 = 2;
@@ -32,18 +32,23 @@ int main() {
 	ST_AddJobsProcess = InsertNewJobToList(ST_AddJobsProcess,  Name_);
 	ST_AddJobsProcess = InsertNewJobToList(ST_AddJobsProcess, Name_1);
 
-	ST_AddOperationsProcess = InsertNewOperationToList(ST_AddOperationsProcess, OP);
-	ST_AddOperationsProcess = InsertNewOperationToList(ST_AddOperationsProcess, OP_);
-	ST_AddOperationsProcess = InsertNewOperationToList(ST_AddOperationsProcess, OP_1);
+	ST_AddOperationsProcess = InsertNewOperationToList(ST_AddOperationsProcess, OP1);
+	ST_AddOperationsProcess = InsertNewOperationToList(ST_AddOperationsProcess, OP2);
+	ST_AddOperationsProcess = InsertNewOperationToList(ST_AddOperationsProcess, OP3);
 
 	ST_AddMachinesProcess = InsertNewMachineToList(ST_AddMachinesProcess, m1, t1);
 	ST_AddMachinesProcess = InsertNewMachineToList(ST_AddMachinesProcess, m2, t2);
 	ST_AddMachinesProcess = InsertNewMachineToList(ST_AddMachinesProcess, m3, t3);
 
 
-	ST_AddOperationsProcess = ConnectMachineToOperation(ST_AddOperationsProcess, ST_AddMachinesProcess, OP_1, m3);
-	ST_AddOperationsProcess = ConnectMachineToOperation(ST_AddOperationsProcess, ST_AddMachinesProcess, OP, m1);
-	ST_AddOperationsProcess = ConnectMachineToOperation(ST_AddOperationsProcess, ST_AddMachinesProcess, OP_1, m3);
+	ST_AddOperationsProcess = ConnectMachineToOperation(ST_AddOperationsProcess, ST_AddMachinesProcess, OP3, m3);
+	ST_AddOperationsProcess = ConnectMachineToOperation(ST_AddOperationsProcess, ST_AddMachinesProcess, OP1, m1);
+	ST_AddOperationsProcess = ConnectMachineToOperation(ST_AddOperationsProcess, ST_AddMachinesProcess, OP3, m3);
+
+
+
+	ST_AddJobsProcess = ConnectJobToOperation(ST_AddJobsProcess,ST_AddOperationsProcess, Name, OP3);
+	ST_AddJobsProcess = ConnectJobToOperation(ST_AddJobsProcess,ST_AddOperationsProcess, Name_, OP1);
 
 
 

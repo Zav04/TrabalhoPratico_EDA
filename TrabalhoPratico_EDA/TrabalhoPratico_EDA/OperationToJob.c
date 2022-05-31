@@ -1,35 +1,67 @@
 #include "Functions.h"
 
+ST_Jobs* ConnectJobToOperation(ST_Jobs* ST_JobToAloc, ST_Operation* ST_OperationtoAloc, char CH_NameofJob[50], char CH_NameOffOperation[50])
+{
 
-//ST_Jobs* ConnectMachineToOperation(ST_Operation* ST_OperationToAloc, char* CH_NameOfOperation, int NumberOfMachine)
-//{
-//
-//	ST_Operation* ST_OperationActualNode = ST_OperationToAloc;
-//	ST_Operation* ST_OperationBeforeNode = ST_OperationToAloc;
-//
-//
-//	while (ST_OperationActualNode != NULL && strcmp(ST_OperationActualNode->CH_NameofOperation, CH_NameOfOperation))
-//	{
-//		ST_OperationBeforeNode = ST_OperationActualNode;
-//		ST_OperationActualNode = ST_OperationActualNode->P_ST_Next;
-//
-//
-//	}
-//
-//	if (ST_OperationActualNode != NULL)
-//	{
-//		ST_Machines* ST_AuxNewMachine = (ST_Machines*)malloc(sizeof(ST_Machines));
-//		ST_AuxNewMachine->IN_NumberofMachine = NumberOfMachine;
-//		ST_AuxNewMachine->IN_TimeToProcess = NumberOfMachine;
-//		ST_AuxNewMachine->P_ST_Next = ST_OperationActualNode->P_ST_Machines;
-//
-//
-//		ST_OperationActualNode->P_ST_Machines = ST_AuxNewMachine;
-//
-//
-//	}
-//
-//	return(ST_OperationToAloc);
-//
-//
-//}
+	ST_Jobs* ST_JobActualNode = ST_JobToAloc;
+	ST_Jobs* ST_JobBeforeNode;
+
+
+	ST_Operation* ST_AuxOperation = ST_OperationtoAloc;
+
+	int IN_FoundJob = -99;
+	int IN_FoundOperation = -99;
+
+
+
+	//Job Node
+	while (ST_JobActualNode != NULL && strcmp(ST_JobActualNode->CH_NameofJob, CH_NameofJob) != 0)
+	{
+		ST_JobBeforeNode = ST_JobActualNode;
+		ST_JobActualNode = ST_JobActualNode->P_ST_Next;
+
+
+	}
+	if (ST_JobActualNode != NULL && strcmp(ST_JobActualNode->CH_NameofJob, CH_NameofJob) == 0)
+	{
+		IN_FoundOperation = 1;
+
+	}
+
+
+	//Operation  Node
+	while (ST_AuxOperation != NULL && strcmp(ST_AuxOperation->CH_NameofOperation,CH_NameOffOperation) != 0)
+	{
+
+		ST_AuxOperation = ST_AuxOperation->P_ST_Next;
+
+
+	}
+	if (ST_AuxOperation != NULL && strcmp(ST_AuxOperation->CH_NameofOperation, CH_NameOffOperation) == 0)
+	{
+		IN_FoundOperation = 1;
+
+	}
+
+
+	if (IN_FoundOperation == 1 && IN_FoundOperation == 1)
+	{
+
+		if (ST_JobActualNode != NULL && ST_AuxOperation != NULL)
+		{
+			//ST_Operation* ST_AuxNewOperation = (ST_Operation*)malloc(sizeof(ST_Operation));
+			ST_JobActualNode->P_ST_Operation = ST_AuxOperation;
+		}
+
+	}
+	else
+	{
+		system("CLS");
+		printf("PARTIU");
+		system("PAUSE");
+	}
+
+	return(ST_JobToAloc);
+
+
+}

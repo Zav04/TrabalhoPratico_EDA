@@ -22,7 +22,7 @@ void ShowAllProgram(ST_Jobs *ST_ShowReadProcess,BOOL B_Pause);
 void WriteJobMenuInCenter();
 ST_Jobs* MainFromJobs(ST_Jobs* ST_AddJobToList, ST_Operation* ST_AddOperationToList, ST_Machines* ST_AddmachineToList);
 ST_Jobs* VerifyJobsOption(ST_Jobs* ST_AddJobToList, ST_Operation* ST_AddOperationToList, ST_Machines* ST_AddmachineToList, int* IN_OptionChoseByUser);
-ST_Jobs* InsertNewJobToList(ST_Jobs* ST_AddJobToList,char CH_NameofPJob[99]);
+ST_Jobs* InsertNewJobToList(ST_Jobs* ST_AddJobToList,char CH_NameofPJob[50]);
 ST_Jobs* InsertNewJob(ST_Jobs* ST_AddJobToList);
 ST_Jobs* RemoveParticularJob(ST_Jobs* ST_RemoveJobToList);
 ST_Jobs* ChangeJob(ST_Jobs* ST_ChangeJobToList);
@@ -35,7 +35,7 @@ void ShowJobs(ST_Jobs* ST_ShowJobToList, BOOL B_Pause);
 void WriteOperationMenuInCenter();
 ST_Operation* MainFromOperation(ST_Jobs* ST_AddJobToList, ST_Operation* ST_AddOperationToList, ST_Machines* ST_AddmachineToList);
 ST_Operation* VerifyOperationOption(ST_Jobs* ST_AddJobToList, ST_Operation* ST_AddOperationToList, ST_Machines* ST_AddmachineToList, int* IN_OptionChoseByUser);
-ST_Operation* InsertNewOperationToList(ST_Operation* ST_AddOperationToList,char CH_NameofOperation[99]);
+ST_Operation* InsertNewOperationToList(ST_Operation* ST_AddOperationToList,char CH_NameofOperation[50]);
 ST_Operation* InsertNewOperation(ST_Operation* ST_AddOperationToList);
 ST_Operation* RemoveParticularOperation(ST_Operation* ST_RemoveOperationToList);
 ST_Operation* ChangeOperation(ST_Operation* ST_ChangeJobToList);
@@ -58,10 +58,8 @@ void ShowMachines(ST_Machines* ST_AddmachineToList, BOOL B_Pause);
 
 
 ///////////////////////////////////////////////////////////////////////////////// CONNECTIONS FUNCTIONS ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-ST_Operation* ConnectMachineToOperation(ST_Operation* ST_OperationToAloc, ST_Machines* ST_MachinetoAloc, char CH_NameOsadsadasfOperation[99], int NumberOfMachine);
-
-
-
+ST_Operation* ConnectMachineToOperation(ST_Operation* ST_OperationToAloc, ST_Machines* ST_MachinetoAloc, char CH_NameofOperation[50], int NumberOfMachine);
+ST_Jobs* ConnectJobToOperation(ST_Jobs* ST_JobToAloc, ST_Operation* ST_OperationtoAloc, char CH_NameofJob[50], char CH_NameOffOperation[50]);
 
 ///////////////////////////////////////////////////////////////////////////////// CONNECTIONS FUNCTIONS ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

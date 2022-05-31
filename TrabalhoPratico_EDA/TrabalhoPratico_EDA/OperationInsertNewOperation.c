@@ -22,11 +22,12 @@ ST_Operation* InsertNewOperation(ST_Operation* ST_AddOperationToList)
 		return(ST_AddOperationToList);
 }
 
-
-ST_Operation* InsertNewOperationToList(ST_Operation* ST_AddOperationToList, char CH_NameofOperation[99])
+ST_Operation* InsertNewOperationToList(ST_Operation* ST_AddOperationToList, char CH_NameofOperation[50])
 {
 
 	ST_Operation* ST_NewListOperation = (ST_Operation*)malloc(sizeof(ST_Operation));
+
+	ST_Machines* ST_CreateAMachineNode = NULL;
 
 
 	if (ST_NewListOperation != NULL)
@@ -34,6 +35,7 @@ ST_Operation* InsertNewOperationToList(ST_Operation* ST_AddOperationToList, char
 		//Job List
 		strcpy(ST_NewListOperation->CH_NameofOperation, CH_NameofOperation);
 		//Job Adress to Next List
+		ST_NewListOperation->P_ST_Machines = ST_CreateAMachineNode;
 		ST_NewListOperation->P_ST_Next = ST_AddOperationToList;
 
 		return(ST_NewListOperation);

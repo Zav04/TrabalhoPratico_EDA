@@ -26,15 +26,18 @@ ST_Jobs* InsertNewJob(ST_Jobs* ST_AddJobToList)
 }
 
 
-ST_Jobs* InsertNewJobToList(ST_Jobs* ST_AddJobToList, char CH_NameofPJob[99])
+ST_Jobs* InsertNewJobToList(ST_Jobs* ST_AddJobToList, char CH_NameofPJob[50])
 {
 	ST_Jobs* ST_NewListJob = (ST_Jobs*)malloc(sizeof(ST_Jobs));
+	ST_Operation* ST_AuxAddOperationNode = NULL;
+
 
 	if (ST_NewListJob != NULL)
 	{
 		//Job List
 		strcpy(ST_NewListJob->CH_NameofJob, CH_NameofPJob);
 		//Job Adress to Next List
+		ST_NewListJob->P_ST_Operation = ST_AuxAddOperationNode;
 		ST_NewListJob->P_ST_Next = ST_AddJobToList;
 
 
