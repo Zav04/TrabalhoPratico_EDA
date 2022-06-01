@@ -20,8 +20,6 @@ ST_Machines* RemoveParticularMachine(ST_Machines* ST_AddmachineToList)
 		{
 			ST_AddmachineToList = ST_AtualNode->P_ST_Next;
 			free(ST_AtualNode);
-			//free(ST_AtualNode->P_ST_Operation->P_ST_Machines);
-			//free(ST_AtualNode->P_ST_Operation);
 			IN_NoOperationFouned = 1;
 			printf("\Machine number %d successfully removed!\n", IN_MachineToRemove);
 			system("PAUSE");
@@ -38,10 +36,7 @@ ST_Machines* RemoveParticularMachine(ST_Machines* ST_AddmachineToList)
 			if (ST_AtualNode != NULL)
 			{
 				ST_BeforeNode->P_ST_Next = ST_AtualNode->P_ST_Next;
-			
 				free(ST_AtualNode);
-				//free(ST_AtualNode->P_ST_Operation->P_ST_Machines);
-				//free(ST_AtualNode->P_ST_Operation);
 				IN_NoOperationFouned = 1;
 				printf("\Machine number %d successfully removed!\n", IN_MachineToRemove);
 				system("PAUSE");

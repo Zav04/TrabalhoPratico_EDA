@@ -1,64 +1,86 @@
 #include "Functions.h"
 
-
-void MinimalTimeOfJob(ST_Jobs* ST_MinimalTimeProces)
+void MinimalTimeOfJob(ST_Jobs* ST_MaximalTimeProces)
 {
-	ShowAllOperation(ST_MinimalTimeProces, FALSE);
+	ShowAllProgram(ST_MaximalTimeProces, FALSE);
 
-	ST_Jobs* ST_MinimalTimeofJob;
-	ST_MinimalTimeofJob = ST_MinimalTimeProces;
 
-	char CH_AuxName[50];
-	int IN_MinTimeBestTime = 0;
-	int IN_MinTimeJob=0;
+	ST_Jobs* ST_MaximalTimeofJob;
+	ST_MaximalTimeofJob = ST_MaximalTimeProces;
+	ST_Operation* ST_AuxAddOperationToList = NULL;
+	ST_Machines* ST_AuxAddmachineToList = NULL;
 
-	if (ST_MinimalTimeofJob != NULL)
+	int IN_NumberOfOPerations = 0;
+	int IN_ArrayofResults[99];
+	int IN_SaveHigherValue = 999999;
+	int IN_IndexOfArray = 0;
+	int IN_MaxTimeJob = 0;
+
+
+	if (ST_MaximalTimeProces != NULL)
 	{
-		while (ST_MinimalTimeofJob != NULL)
+
+		while (ST_MaximalTimeofJob != NULL)
 		{
-
-			if (strcmp(CH_AuxName, ST_MinimalTimeofJob->CH_NameofProcess) == 0)
+			ST_AuxAddOperationToList = ST_MaximalTimeofJob->P_ST_Operation;
+			while (ST_AuxAddOperationToList != NULL)
 			{
-				if (IN_MinTimeBestTime > ST_MinimalTimeofJob->IN_TimeToProcess)
+				IN_NumberOfOPerations++;
+				ST_AuxAddOperationToList = ST_AuxAddOperationToList->P_ST_Next;
+			}
+
+			ST_AuxAddOperationToList = ST_MaximalTimeofJob->P_ST_Operation;
+
+			while (ST_AuxAddOperationToList != NULL)
+			{
+				ST_AuxAddmachineToList = ST_AuxAddOperationToList->P_ST_Machines;
+				while (ST_AuxAddmachineToList != NULL)
 				{
-					IN_MinTimeBestTime = ST_MinimalTimeofJob->IN_TimeToProcess;
+					if (IN_SaveHigherValue >= ST_AuxAddmachineToList->IN_TimeToProcess)
+					{
+						IN_SaveHigherValue = ST_AuxAddmachineToList->IN_TimeToProcess;
+
+					}
+
+					ST_AuxAddmachineToList = ST_AuxAddmachineToList->P_ST_Next;
+
 				}
-				ST_MinimalTimeofJob = ST_MinimalTimeofJob->P_ST_Next;
+
+				IN_ArrayofResults[IN_IndexOfArray] = IN_SaveHigherValue;
+				IN_IndexOfArray++;
+				IN_SaveHigherValue = 999999;
+				ST_AuxAddOperationToList = ST_AuxAddOperationToList->P_ST_Next;
 
 			}
-			else if (strcmp(CH_AuxName, ST_MinimalTimeofJob->CH_NameofProcess) != 0)
+
+
+			for (int i = 0; i < IN_IndexOfArray; i++)
 			{
-
-				strcpy(CH_AuxName, ST_MinimalTimeofJob->CH_NameofProcess);
-				IN_MinTimeJob = IN_MinTimeJob + IN_MinTimeBestTime;
-				IN_MinTimeBestTime = ST_MinimalTimeofJob->IN_TimeToProcess;
-
+				IN_MaxTimeJob = IN_MaxTimeJob + IN_ArrayofResults[i];
 			}
+
+			printf("The maximum time the %s will take will be: ", ST_MaximalTimeofJob->CH_NameofJob);
+			printf("%d\n", IN_MaxTimeJob);
+			printf("*****************************************************************************\n");
+			ST_MaximalTimeofJob = ST_MaximalTimeofJob->P_ST_Next;
+
+			IN_NumberOfOPerations = 0;
+			IN_IndexOfArray = 0;
+			IN_SaveHigherValue = 999999;
+			IN_MaxTimeJob = 0;
+
 
 		}
 
-		IN_MinTimeJob = IN_MinTimeJob + IN_MinTimeBestTime;
-
-		printf("The minimum  time the job will take will be: ");
-		printf("%d\n", IN_MinTimeJob);
-		printf("*****************************************************************************\n");
-		system("PAUSE");
-		system("CLS");
-
-
 	}
-
 	else
 	{
-		printf("NO OPERATIONS FOUNDED TO CALCULATE THE MINIMAL TIME\n");
+		printf("NO OPERATIONS FOUNDED TO CALCULATE THE MAXIMAL TIME\n");
 		system("PAUSE");
 		system("CLS");
 	}
 
+	system("PAUSE");
 
 }
-
-
-
-
 

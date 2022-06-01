@@ -76,18 +76,59 @@ ST_Jobs* ConnectJobToOperation(ST_Jobs* ST_JobToAloc, ST_Operation* ST_Operation
 
 		if (ST_JobActualNode != NULL && ST_AuxOperation != NULL)
 		{
-			ST_Operation* ST_AuxNewOperation = (ST_Operation*)malloc(sizeof(ST_Operation));
-			strcpy(ST_AuxNewOperation->CH_NameofOperation, ST_AuxOperation->CH_NameofOperation);
-			ST_AuxNewOperation->P_ST_Machines = ST_AuxOperation->P_ST_Machines;
+			
 
-			ST_AuxNewOperation->P_ST_Next = ST_JobActualNode->P_ST_Operation;
+			if (ST_JobActualNode->P_ST_Operation != NULL)
+			{
+				if (strcmp(ST_JobActualNode->P_ST_Operation->CH_NameofOperation, ST_AuxOperation->CH_NameofOperation) == 0)
+				{
 
-			ST_JobActualNode->P_ST_Operation = ST_AuxNewOperation;
+					ST_Machines* ST_NewListMachines = (ST_Machines*)malloc(sizeof(ST_Machines));
 
+
+					if (ST_NewListMachines != NULL)
+					{
+
+						ST_NewListMachines->IN_NumberofMachine = ST_AuxOperation->P_ST_Machines->IN_NumberofMachine;
+						ST_NewListMachines->IN_TimeToProcess = ST_AuxOperation->P_ST_Machines->IN_TimeToProcess;
+						ST_NewListMachines->P_ST_Next = ST_JobActualNode->P_ST_Operation->P_ST_Machines;
+
+						//ST_AuxOperation->P_ST_Next = ST_JobActualNode->P_ST_Operation;
+
+						ST_JobActualNode->P_ST_Operation->P_ST_Machines = ST_NewListMachines;
+					}
+
+				}
+				else
+				{
+					ST_Operation* ST_AuxNewOperation = (ST_Operation*)malloc(sizeof(ST_Operation));
+					strcpy(ST_AuxNewOperation->CH_NameofOperation, ST_AuxOperation->CH_NameofOperation);
+					ST_AuxNewOperation->P_ST_Machines = ST_AuxOperation->P_ST_Machines;
+
+					ST_AuxNewOperation->P_ST_Next = ST_JobActualNode->P_ST_Operation;
+
+					ST_JobActualNode->P_ST_Operation = ST_AuxNewOperation;
+
+
+				}
+			}
+			else
+			{
+					ST_Operation* ST_AuxNewOperation = (ST_Operation*)malloc(sizeof(ST_Operation));
+					strcpy(ST_AuxNewOperation->CH_NameofOperation, ST_AuxOperation->CH_NameofOperation);
+					ST_AuxNewOperation->P_ST_Machines = ST_AuxOperation->P_ST_Machines;
+
+					ST_AuxNewOperation->P_ST_Next = ST_JobActualNode->P_ST_Operation;
+
+					ST_JobActualNode->P_ST_Operation = ST_AuxNewOperation;
+
+
+			}
 
 		}
 
 	}
+
 	else
 	{
 		system("CLS");

@@ -24,6 +24,8 @@ void WriteCenterTextMenu()
 	const char* STR_Show = "4-SHOW ALL PROGRAMS";
 	const char* STR_Con = "5-COONECTIONS";
 	const char* STR_Save = "6-SAVE ALL OPTIONS";
+	const char* STR_Max = "7-Job Max Time";
+	const char* STR_Min = "8-Job Min Time";
 	const char* STR_Exit = "0-Exit: ";
 	const char* STR_OperationRes = "OPERATION: ";
 
@@ -90,6 +92,23 @@ void WriteCenterTextMenu()
 			break;
 
 		case 8:
+			STR_ConstStringToDraw = STR_Max;
+			IN_StringLengh = strlen(STR_Max);
+			IN_Fill_Width = (CI_GetXOfCMD - IN_StringLengh) / 2 + IN_StringLengh;
+			printf("%*s\n", IN_Fill_Width, STR_ConstStringToDraw);
+			IN_Iterator++;
+			break;
+
+		case 9:
+			STR_ConstStringToDraw = STR_Min;
+			IN_StringLengh = strlen(STR_Min);
+			IN_Fill_Width = (CI_GetXOfCMD - IN_StringLengh) / 2 + IN_StringLengh;
+			printf("%*s\n", IN_Fill_Width, STR_ConstStringToDraw);
+			IN_Iterator++;
+			break;
+
+
+		case 10:
 			STR_ConstStringToDraw = STR_Exit;
 			IN_StringLengh = strlen(STR_Exit);
 			IN_Fill_Width = (CI_GetXOfCMD - IN_StringLengh) / 2 + IN_StringLengh;
@@ -97,7 +116,7 @@ void WriteCenterTextMenu()
 			IN_Iterator++;
 			break;
 
-		case 9:
+		case 11:
 			STR_ConstStringToDraw = STR_OperationRes;
 			IN_StringLengh = strlen(STR_OperationRes);
 			IN_Fill_Width = (CI_GetXOfCMD - IN_StringLengh) / 2 + IN_StringLengh;
@@ -107,7 +126,7 @@ void WriteCenterTextMenu()
 		}
 
 
-	} while (IN_Iterator <= 9);
+	} while (IN_Iterator <= 11);
 }
 
 

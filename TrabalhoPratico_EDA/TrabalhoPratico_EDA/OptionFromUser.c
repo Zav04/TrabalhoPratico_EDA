@@ -47,6 +47,13 @@ void VerifyOptionFromUser(ST_Jobs* ST_AddJobsProcess , ST_Operation* ST_AddOpera
 		WriteDataToFile(ST_AddJobsProcess);;
 		break;
 
+	case 7:
+		MaximalTimeOfJob(ST_AddJobsProcess);;
+		break;
+	case 8:
+
+		MinimalTimeOfJob(ST_AddJobsProcess);;
+		break;
 
 	case 0:
 		exit(0);

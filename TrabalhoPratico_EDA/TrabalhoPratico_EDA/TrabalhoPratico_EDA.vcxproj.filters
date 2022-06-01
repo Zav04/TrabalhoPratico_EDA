@@ -36,27 +36,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="InsertNewOperation.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="RemoveParticularOperation.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ReadAndWriteDataToFile.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="MinimalTimeOfJob.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="MaximalTimeOfJob.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="AverageTimeOfJob.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ChangeParticularOperation.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="JobsMenu.c">
       <Filter>Source Files\Jobs</Filter>
     </ClCompile>
@@ -151,6 +130,24 @@
       <Filter>Source Files\Connections</Filter>
     </ClCompile>
     <ClCompile Include="ConnectionOptionFromUser.c">
+      <Filter>Source Files\Connections</Filter>
+    </ClCompile>
+    <ClCompile Include="MaximalTimeOfJob.c">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="MinimalTimeOfJob.c">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="ConnectionDisassociateOperationInJob.c">
+      <Filter>Source Files\Connections</Filter>
+    </ClCompile>
+    <ClCompile Include="ConnectionDisassociateMachineInOperation.c">
+      <Filter>Source Files\Connections</Filter>
+    </ClCompile>
+    <ClCompile Include="ConnectionsShowOperationsInJobs.c">
+      <Filter>Source Files\Connections</Filter>
+    </ClCompile>
+    <ClCompile Include="ConnectionsShowMachinesInOperations.c">
       <Filter>Source Files\Connections</Filter>
     </ClCompile>
   </ItemGroup>

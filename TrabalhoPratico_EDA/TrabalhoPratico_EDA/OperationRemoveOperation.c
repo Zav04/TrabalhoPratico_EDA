@@ -19,9 +19,12 @@ ST_Operation* RemoveParticularOperation(ST_Operation* ST_RemoveJobToList)
 		if (strcmp(ST_AtualNode->CH_NameofOperation, CH_OperationToRemove) == 0)
 		{
 			ST_RemoveJobToList = ST_AtualNode->P_ST_Next;
+
+			if (ST_AtualNode->P_ST_Machines != NULL)
+			{
+				free(ST_AtualNode->P_ST_Machines);
+			}
 			free(ST_AtualNode);
-			//free(ST_AtualNode->P_ST_Operation->P_ST_Machines);
-			//free(ST_AtualNode->P_ST_Operation);
 			IN_NoOperationFouned = 1;
 			printf("\nOperation %s successfully removed!\n", CH_OperationToRemove);
 			system("PAUSE");
@@ -39,9 +42,11 @@ ST_Operation* RemoveParticularOperation(ST_Operation* ST_RemoveJobToList)
 			{
 				ST_BeforeNode->P_ST_Next = ST_AtualNode->P_ST_Next;
 				
+				if (ST_AtualNode->P_ST_Machines != NULL)
+				{
+					free(ST_AtualNode->P_ST_Machines);
+				}
 				free(ST_AtualNode);
-				//free(ST_AtualNode->P_ST_Operation->P_ST_Machines);
-				//free(ST_AtualNode->P_ST_Operation);
 				IN_NoOperationFouned = 1;
 				printf("\nOperation %s successfully removed!\n", CH_OperationToRemove);
 				system("PAUSE");

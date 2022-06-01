@@ -25,6 +25,20 @@ ST_LoadAllTypes* VerifyConnectionOption(ST_Jobs* ST_AddJobToList, ST_Operation* 
 		ST_SaveData->P_ST_Machines = ST_AddmachineToList;
 		break;
 
+	case 3:
+		ST_AuxJob=DisassociateOperationInJob(ST_AddJobToList, ST_AddOperationToList);
+		ST_SaveData->P_ST_Jobs = ST_AuxJob;
+		ST_SaveData->P_ST_Operation = ST_AddOperationToList;
+		ST_SaveData->P_ST_Machines = ST_AddmachineToList;
+		break;
+
+	case 4:
+		ST_AuxOperation = DisassociateMachineInOperation(ST_AddOperationToList, ST_AddmachineToList);
+		ST_SaveData->P_ST_Jobs = ST_AddJobToList;
+		ST_SaveData->P_ST_Operation = ST_AuxOperation;
+		ST_SaveData->P_ST_Machines = ST_AddmachineToList;
+		break;
+
 	case 5:
 		Menu(ST_AddJobToList, ST_AddOperationToList, ST_AddmachineToList);
 		break;

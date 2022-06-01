@@ -61,9 +61,21 @@ ST_Jobs* InsertNewJobToList(ST_Jobs* ST_AddJobToList, char CH_NameofPJob[50])
 {
 	ST_Jobs* ST_NewListJob = (ST_Jobs*)malloc(sizeof(ST_Jobs));
 	ST_Operation* ST_AuxAddOperationNode = NULL;
+	ST_Jobs* ST_AuxNewListJob = ST_AddJobToList;
+	BOOL B_Created=FALSE;
 
+	while (ST_AuxNewListJob!=NULL)
+	{
+		if (strcmp(ST_AuxNewListJob->CH_NameofJob, CH_NameofPJob) == 0)
+		{
+			B_Created = TRUE;
+			break;
+		}
+		ST_AuxNewListJob = ST_AuxNewListJob->P_ST_Next;
 
-	if (ST_NewListJob != NULL)
+	}
+
+	if (ST_NewListJob != NULL && B_Created==FALSE)
 	{
 		//Job List
 		strcpy(ST_NewListJob->CH_NameofJob, CH_NameofPJob);

@@ -20,6 +20,8 @@ void WriteConnectionsMenuInCenter()
 	const char* STR_Machines = "***********************Connections***********************";
 	const char* STR_INM = "1-Connect Operation to Job";
 	const char* STR_RPM = "2-Connect Machine to Operation";
+	const char* STR_DOJ = "3-Disassociate Operation In Job";
+	const char* STR_DMO = "4-Disassociate Machine In Operations";
 	const char* STR_MBack = "5-Back";
 	const char* STR_OperationRes = "OPERATION: ";
 
@@ -52,6 +54,22 @@ void WriteConnectionsMenuInCenter()
 			break;
 
 		case 4:
+			STR_ConstStringToDraw = STR_DOJ;
+			IN_StringLengh = strlen(STR_DOJ);
+			IN_Fill_Width = (CI_GetXOfCMD - IN_StringLengh) / 2 + IN_StringLengh;
+			printf("%*s\n", IN_Fill_Width, STR_ConstStringToDraw);
+			IN_Iterator++;
+			break;
+
+		case 5:
+			STR_ConstStringToDraw = STR_DMO;
+			IN_StringLengh = strlen(STR_DMO);
+			IN_Fill_Width = (CI_GetXOfCMD - IN_StringLengh) / 2 + IN_StringLengh;
+			printf("%*s\n", IN_Fill_Width, STR_ConstStringToDraw);
+			IN_Iterator++;
+			break;
+
+		case 6:
 			STR_ConstStringToDraw = STR_MBack;
 			IN_StringLengh = strlen(STR_MBack);
 			IN_Fill_Width = (CI_GetXOfCMD - IN_StringLengh) / 2 + IN_StringLengh;
@@ -59,7 +77,7 @@ void WriteConnectionsMenuInCenter()
 			IN_Iterator++;
 			break;
 
-		case 5:
+		case 7:
 			STR_ConstStringToDraw = STR_OperationRes;
 			IN_StringLengh = strlen(STR_OperationRes);
 			IN_Fill_Width = (CI_GetXOfCMD - IN_StringLengh) / 2 + IN_StringLengh;
@@ -68,5 +86,5 @@ void WriteConnectionsMenuInCenter()
 			break;
 		}
 
-	} while (IN_Iterator <= 5);
+	} while (IN_Iterator <= 7);
 }

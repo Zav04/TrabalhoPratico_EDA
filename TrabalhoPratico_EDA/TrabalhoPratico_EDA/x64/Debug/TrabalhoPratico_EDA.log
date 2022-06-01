@@ -1,7 +1,2 @@
-﻿  JobsRemoveJob.c
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\JobsRemoveJob.c(26,11): warning C4129: 'J': unrecognized character escape sequence
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\JobsRemoveJob.c(45,12): warning C4129: 'J': unrecognized character escape sequence
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\JobsRemoveJob.c(64,10): warning C4129: 'J': unrecognized character escape sequence
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\JobsRemoveJob.c(65,63): warning C4474: 'printf' : too many arguments passed for format string
-D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\JobsRemoveJob.c(65,63): message : placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+﻿  ConnectionDisassociateOperationInJob.c
   TrabalhoPratico_EDA.vcxproj -> D:\IPCA\TrabalhoPratico_EDA\TrabalhoPratico_EDA\x64\Debug\TrabalhoPratico_EDA.exe
