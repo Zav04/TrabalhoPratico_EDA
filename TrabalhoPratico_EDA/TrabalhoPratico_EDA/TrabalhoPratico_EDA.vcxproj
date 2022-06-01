@@ -145,6 +145,9 @@
     <ClCompile Include="ChangeParticularOperation.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="ConnectionOptionFromUser.c" />
+    <ClCompile Include="ConnectionsMain.c" />
+    <ClCompile Include="ConnectionsMenu.c" />
     <ClCompile Include="InsertNewOperation.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -175,7 +178,7 @@
     <ClCompile Include="MachineShowMachine.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="MachineToOperation.c">
+    <ClCompile Include="ConectionsMachineToOperation.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="OperationChangeParticularOperation.c" />
@@ -195,13 +198,14 @@
     <ClCompile Include="OperationOptionFromUser.c" />
     <ClCompile Include="OperationRemoveOperation.c" />
     <ClCompile Include="OperationShowOperations.c" />
-    <ClCompile Include="OperationToJob.c">
+    <ClCompile Include="ConectionsOperationToJob.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="OptionFromUser.c" />
     <ClCompile Include="ReadAndWriteDataToFile.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="ReadFile.c" />
     <ClCompile Include="RemoveParticularOperation.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -211,6 +215,7 @@
     <ClCompile Include="Main.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="WritetoFile.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Functions.h">

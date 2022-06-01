@@ -14,6 +14,7 @@ int GetOptionFromUser(int* IN_OptionFromUser)
 //Verify and Open the Choice by User
 void VerifyOptionFromUser(ST_Jobs* ST_AddJobsProcess , ST_Operation* ST_AddOperationProcess , ST_Machines* ST_AddMachineProcess, int* IN_OptionChoseByUser)
 {
+	ST_LoadAllTypes* ST_AuxMemory = (ST_LoadAllTypes*)malloc(sizeof(ST_LoadAllTypes));
 
 	switch (*IN_OptionChoseByUser)
 	{
@@ -33,6 +34,19 @@ void VerifyOptionFromUser(ST_Jobs* ST_AddJobsProcess , ST_Operation* ST_AddOpera
 	case 4:
 		ShowAllProgram(ST_AddJobsProcess, TRUE);
 		break;
+
+	case 5:
+		ST_AuxMemory=MainFromConections(ST_AddJobsProcess, ST_AddOperationProcess, ST_AddMachineProcess, ST_AuxMemory);
+		ST_AddJobsProcess = ST_AuxMemory->P_ST_Jobs;
+		ST_AddOperationProcess = ST_AuxMemory->P_ST_Operation;
+		ST_AddMachineProcess = ST_AuxMemory->P_ST_Machines;
+		free(ST_AuxMemory);
+		break;
+
+	case 6:
+		WriteDataToFile(ST_AddJobsProcess);;
+		break;
+
 
 	case 0:
 		exit(0);

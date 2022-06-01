@@ -1,5 +1,29 @@
 #include "Functions.h"
 
+
+
+int VerifySameOperation(ST_Operation* ST_AddOperationToList, char CH_NameofOperation[50])
+{
+	ST_Operation* ST_AuxAddOperationToList = ST_AddOperationToList;
+
+	while (ST_AuxAddOperationToList != NULL)
+	{
+		if (strcmp(ST_AuxAddOperationToList->CH_NameofOperation, CH_NameofOperation)==0)
+		{
+			return -1;
+
+		}
+		else
+		{
+			ST_AuxAddOperationToList = ST_AuxAddOperationToList->P_ST_Next;
+		}
+
+	}
+	return 0;
+
+
+}
+
 ST_Operation* InsertNewOperation(ST_Operation* ST_AddOperationToList)
 {
 	ST_Operation* ST_AuxAddOperationToList = ST_AddOperationToList;
@@ -9,11 +33,21 @@ ST_Operation* InsertNewOperation(ST_Operation* ST_AddOperationToList)
 	printf("What's the new Operation you want to add?\n");
 	printf("R:");
 	scanf("%s", CH_NameOfOperation);
+	
+
+	if (VerifySameOperation(ST_AddOperationToList, CH_NameOfOperation) == -1)
+	{
+
+		system("CLS");
+		printf("Duplicated Operation\nProcessAborted");
+		system("PAUSE");
+		return ST_AddOperationToList;
+
+	}
+
 
 	
 	ST_AddOperationToList = InsertNewOperationToList(ST_AddOperationToList, CH_NameOfOperation);
-
-		//WriteDataToFile(ST_AddJobsProcess);
 
 		system("CLS");
 		printf("\nOperation are Saved\n");

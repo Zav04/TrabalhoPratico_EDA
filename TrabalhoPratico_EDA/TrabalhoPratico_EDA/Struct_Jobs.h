@@ -15,6 +15,16 @@
 
 
 //Dinamic List of Jobs
+typedef struct LoadAllTypes
+{
+	struct Jobs* P_ST_Jobs;
+	struct Operation* P_ST_Operation;
+	struct Machines* P_ST_Machines;
+
+}ST_LoadAllTypes;
+
+
+//Dinamic List of Jobs
 typedef struct Jobs {
 
 	char CH_NameofJob[50];

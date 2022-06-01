@@ -38,13 +38,7 @@ ST_Machines* RemoveParticularMachine(ST_Machines* ST_AddmachineToList)
 			if (ST_AtualNode != NULL)
 			{
 				ST_BeforeNode->P_ST_Next = ST_AtualNode->P_ST_Next;
-				
-
-
-				///ELIMINAR MAQUINAS TAMBEM SENÃO FUDEU
-
-
-
+			
 				free(ST_AtualNode);
 				//free(ST_AtualNode->P_ST_Operation->P_ST_Machines);
 				//free(ST_AtualNode->P_ST_Operation);
@@ -76,6 +70,5 @@ ST_Machines* RemoveParticularMachine(ST_Machines* ST_AddmachineToList)
 
 	}
 
-	//WriteDataToFile(ST_RemoveJobToList);
 	return(ST_AddmachineToList);
 }

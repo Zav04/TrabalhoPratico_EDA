@@ -39,12 +39,6 @@ ST_Operation* RemoveParticularOperation(ST_Operation* ST_RemoveJobToList)
 			{
 				ST_BeforeNode->P_ST_Next = ST_AtualNode->P_ST_Next;
 				
-
-
-				///ELIMINAR MAQUINAS TAMBEM SENÃO FUDEU
-
-
-
 				free(ST_AtualNode);
 				//free(ST_AtualNode->P_ST_Operation->P_ST_Machines);
 				//free(ST_AtualNode->P_ST_Operation);
@@ -75,6 +69,5 @@ ST_Operation* RemoveParticularOperation(ST_Operation* ST_RemoveJobToList)
 
 	}
 
-	//WriteDataToFile(ST_RemoveJobToList);
 	return(ST_RemoveJobToList);
 }

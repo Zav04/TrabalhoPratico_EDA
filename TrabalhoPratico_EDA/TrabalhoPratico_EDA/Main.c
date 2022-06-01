@@ -11,46 +11,18 @@ int main() {
 	ST_Jobs* ST_AddJobsProcess = NULL;
 	ST_Operation* ST_AddOperationsProcess = NULL;
 	ST_Machines* ST_AddMachinesProcess = NULL;
+	ST_LoadAllTypes* ST_LoadFile = NULL;
 
 
-	char Name[50] = "Job1";
-	char OP1[50] = "OP1";
-	char Name_[50] = "Job2";
-	char OP2[50] = "OP2";
-	char Name_1[50] = "Job3";
-	char OP3[50] = "OP3";
-	int m1 = 1;
-	int t1 = 10;
-	int m2 = 2;
-	int t2 = 20;
-	int m3 = 3;
-	int t3 = 30;
+	ST_LoadFile=ReadDataOfFile(ST_AddJobsProcess, ST_AddOperationsProcess, ST_AddMachinesProcess);
 
+	ST_AddJobsProcess = ST_LoadFile->P_ST_Jobs;
+	ST_AddOperationsProcess = ST_LoadFile->P_ST_Operation;
+	ST_AddMachinesProcess = ST_LoadFile->P_ST_Machines;
 
+	free(ST_LoadFile);
 
-	ST_AddJobsProcess = InsertNewJobToList(ST_AddJobsProcess,  Name);
-	ST_AddJobsProcess = InsertNewJobToList(ST_AddJobsProcess,  Name_);
-	ST_AddJobsProcess = InsertNewJobToList(ST_AddJobsProcess, Name_1);
-
-	ST_AddOperationsProcess = InsertNewOperationToList(ST_AddOperationsProcess, OP1);
-	ST_AddOperationsProcess = InsertNewOperationToList(ST_AddOperationsProcess, OP2);
-	ST_AddOperationsProcess = InsertNewOperationToList(ST_AddOperationsProcess, OP3);
-
-	ST_AddMachinesProcess = InsertNewMachineToList(ST_AddMachinesProcess, m1, t1);
-	ST_AddMachinesProcess = InsertNewMachineToList(ST_AddMachinesProcess, m2, t2);
-	ST_AddMachinesProcess = InsertNewMachineToList(ST_AddMachinesProcess, m3, t3);
-
-
-	ST_AddOperationsProcess = ConnectMachineToOperation(ST_AddOperationsProcess, ST_AddMachinesProcess, OP3, m3);
-	ST_AddOperationsProcess = ConnectMachineToOperation(ST_AddOperationsProcess, ST_AddMachinesProcess, OP1, m1);
-	ST_AddOperationsProcess = ConnectMachineToOperation(ST_AddOperationsProcess, ST_AddMachinesProcess, OP3, m3);
-
-
-
-	ST_AddJobsProcess = ConnectJobToOperation(ST_AddJobsProcess,ST_AddOperationsProcess, Name, OP3);
-	ST_AddJobsProcess = ConnectJobToOperation(ST_AddJobsProcess,ST_AddOperationsProcess, Name_, OP1);
-
-
+	
 
 	//Call function Menu, to start draw the menu
 	Menu(ST_AddJobsProcess, ST_AddOperationsProcess, ST_AddMachinesProcess);

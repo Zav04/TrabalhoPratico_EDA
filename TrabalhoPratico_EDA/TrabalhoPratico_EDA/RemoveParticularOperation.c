@@ -65,6 +65,5 @@ ST_Jobs* RemoveParticularOperation(ST_Jobs* ST_RemoveProcess)
 
 	}
 	
-	WriteDataToFile(ST_RemoveProcess);
 	return(ST_RemoveProcess);
 }

@@ -62,8 +62,6 @@ ST_Operation* ChangeOperation(ST_Operation* ST_ChangeJobToList)
 
 	}
 
-
-	//WriteDataToFile(ST_ChangeJobToList);
 	return(ST_ChangeJobToList);
 
 

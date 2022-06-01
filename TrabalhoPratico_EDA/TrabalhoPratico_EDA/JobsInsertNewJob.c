@@ -1,5 +1,28 @@
 #include "Functions.h"
 
+int VerifySameJob(ST_Jobs* ST_AddJobToList, char CH_NameofPJob[50])
+{
+	ST_Jobs* ST_AuxAddJobToList = ST_AddJobToList;
+
+	while (ST_AuxAddJobToList != NULL)
+	{
+		if (strcmp(ST_AuxAddJobToList->CH_NameofJob, CH_NameofPJob)==0)
+		{
+			return -1;
+
+		}
+		else
+		{
+			ST_AuxAddJobToList = ST_AuxAddJobToList->P_ST_Next;
+		}
+
+	}
+	return 0;
+
+
+}
+
+
 ST_Jobs* InsertNewJob(ST_Jobs* ST_AddJobToList)
 {
 
@@ -12,10 +35,18 @@ ST_Jobs* InsertNewJob(ST_Jobs* ST_AddJobToList)
 	printf("R:");
 	scanf("%s", &CH_NameOfJob);
 
+	if (VerifySameJob(ST_AddJobToList, CH_NameOfJob) == -1)
+	{
+
+		system("CLS");
+		printf("Duplicated Job\nProcessAborted");
+		system("PAUSE");
+		return ST_AddJobToList;
+
+	}
+
 
 	ST_AddJobToList = InsertNewJobToList(ST_AddJobToList, CH_NameOfJob);
-
-	//WriteDataToFile(ST_AddJobsProcess);
 
 	system("CLS");
 	printf("\nJob are Saved\n");

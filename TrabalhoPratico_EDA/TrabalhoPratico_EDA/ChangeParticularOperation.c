@@ -66,8 +66,6 @@ ST_Jobs* ChangeParticularOperation(ST_Jobs* ST_ChangeJobsProcess)
 
 	}
 
-
-	WriteDataToFile(ST_ChangeJobsProcess);
 	return(ST_ChangeJobsProcess);
 
 

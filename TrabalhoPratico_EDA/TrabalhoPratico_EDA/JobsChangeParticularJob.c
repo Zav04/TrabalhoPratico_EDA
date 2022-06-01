@@ -61,9 +61,6 @@ ST_Jobs* ChangeJob(ST_Jobs* ST_ChangeJobToList)
 		system("CLS");
 
 	}
-
-
-	//WriteDataToFile(ST_ChangeJobToList);
 	return(ST_ChangeJobToList);
 
 

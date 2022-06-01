@@ -1,5 +1,32 @@
 #include "Functions.h"
 
+
+ST_Jobs* OperationToJob(ST_Jobs* ST_JobToAloc, ST_Operation* ST_OperationtoAloc)
+{
+
+	char CH_NameofJob[50];
+	char CH_NameofOperation[50];
+
+
+	ShowJobs(ST_JobToAloc, FALSE);
+	printf("What Job you want add a operation?\n");
+	printf("R:");
+	scanf("%s", CH_NameofJob);
+
+	printf("\n\n");
+
+	ShowOperations(ST_OperationtoAloc, FALSE);
+	printf("What Operation you want add to %s?\n", CH_NameofJob);
+	printf("R:");
+	scanf("%s", CH_NameofOperation);
+
+
+	ST_JobToAloc = ConnectJobToOperation(ST_JobToAloc, ST_OperationtoAloc, CH_NameofJob, CH_NameofOperation);
+
+	return(ST_JobToAloc);
+
+}
+
 ST_Jobs* ConnectJobToOperation(ST_Jobs* ST_JobToAloc, ST_Operation* ST_OperationtoAloc, char CH_NameofJob[50], char CH_NameOffOperation[50])
 {
 
@@ -49,15 +76,22 @@ ST_Jobs* ConnectJobToOperation(ST_Jobs* ST_JobToAloc, ST_Operation* ST_Operation
 
 		if (ST_JobActualNode != NULL && ST_AuxOperation != NULL)
 		{
-			//ST_Operation* ST_AuxNewOperation = (ST_Operation*)malloc(sizeof(ST_Operation));
-			ST_JobActualNode->P_ST_Operation = ST_AuxOperation;
+			ST_Operation* ST_AuxNewOperation = (ST_Operation*)malloc(sizeof(ST_Operation));
+			strcpy(ST_AuxNewOperation->CH_NameofOperation, ST_AuxOperation->CH_NameofOperation);
+			ST_AuxNewOperation->P_ST_Machines = ST_AuxOperation->P_ST_Machines;
+
+			ST_AuxNewOperation->P_ST_Next = ST_JobActualNode->P_ST_Operation;
+
+			ST_JobActualNode->P_ST_Operation = ST_AuxNewOperation;
+
+
 		}
 
 	}
 	else
 	{
 		system("CLS");
-		printf("PARTIU");
+		printf("Dont exist the Values Typed");
 		system("PAUSE");
 	}
 

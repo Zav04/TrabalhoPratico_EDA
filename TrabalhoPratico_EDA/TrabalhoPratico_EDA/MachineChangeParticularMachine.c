@@ -71,8 +71,6 @@ ST_Machines* ChangeMachine(ST_Machines* ST_AddmachineToList)
 
 	}
 
-
-	//WriteDataToFile(ST_ChangeJobToList);
 	return(ST_AuxChangeMachine);
 
 

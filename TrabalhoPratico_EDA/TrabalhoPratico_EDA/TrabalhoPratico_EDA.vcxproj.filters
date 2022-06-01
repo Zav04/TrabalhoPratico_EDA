@@ -28,6 +28,12 @@
     <Filter Include="Source Files\Connections">
       <UniqueIdentifier>{a01cb1e4-2bf4-4c63-900c-090a688c4813}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\ReadFIle">
+      <UniqueIdentifier>{a169ea31-1d85-4923-9d82-4e664e320a20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\WriteFile">
+      <UniqueIdentifier>{4400f9c6-802f-4d0f-aa5d-24b5bb5b1d88}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="InsertNewOperation.c">
@@ -126,10 +132,25 @@
     <ClCompile Include="MachineShowMachine.c">
       <Filter>Source Files\Machines</Filter>
     </ClCompile>
-    <ClCompile Include="MachineToOperation.c">
+    <ClCompile Include="ConectionsMachineToOperation.c">
       <Filter>Source Files\Connections</Filter>
     </ClCompile>
-    <ClCompile Include="OperationToJob.c">
+    <ClCompile Include="ConectionsOperationToJob.c">
+      <Filter>Source Files\Connections</Filter>
+    </ClCompile>
+    <ClCompile Include="WritetoFile.c">
+      <Filter>Source Files\WriteFile</Filter>
+    </ClCompile>
+    <ClCompile Include="ReadFile.c">
+      <Filter>Source Files\ReadFIle</Filter>
+    </ClCompile>
+    <ClCompile Include="ConnectionsMain.c">
+      <Filter>Source Files\Connections</Filter>
+    </ClCompile>
+    <ClCompile Include="ConnectionsMenu.c">
+      <Filter>Source Files\Connections</Filter>
+    </ClCompile>
+    <ClCompile Include="ConnectionOptionFromUser.c">
       <Filter>Source Files\Connections</Filter>
     </ClCompile>
   </ItemGroup>

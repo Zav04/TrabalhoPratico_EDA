@@ -37,8 +37,6 @@ ST_Jobs* InsertNewOperation(ST_Jobs* ST_AddJobsProcess)
 			scanf("%d", &IN_TimeToProcess);
 
 			ST_AddJobsProcess = InsertNewOperationToList(ST_AddJobsProcess, CH_NameOfOperation, IN_NumberofMachine, IN_TimeToProcess);
-
-			WriteDataToFile(ST_AddJobsProcess);
 			
 		}
 
